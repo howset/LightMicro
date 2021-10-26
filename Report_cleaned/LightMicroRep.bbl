@@ -1,0 +1,1189 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Power2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PR}{%
+         family={Power},
+         familyi={P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huisken},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{SPIM, LFM, light-sheet}
+    \strng{namehash}{PRHJ1}
+    \strng{fullhash}{PRHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The impact of light-sheet fluorescence microscopy (LSFM) is visible in
+  fields as diverse as developmental and cell biology, anatomical science,
+  biophysics and neuroscience. Although adoption among biologists has been
+  steady, LSFM has not displaced more traditional imaging methods despite its
+  often-superior performance. One reason for this is that the field has largely
+  conformed to a do-it-yourself ethic, although the challenges of big image
+  data cannot be overstated. With the most powerful implementations of LSFM
+  available to only a few groups worldwide, the scope of this technique is
+  unnecessarily limited. Here we elucidate the key developments and define a
+  simple set of underlying principles governing LSFM. In doing so, we aim to
+  clarify the decisions to be made for those who wish to develop and use
+  bespoke light-sheet systems and to assist in identifying the best approaches
+  to apply this powerful technique to myriad biological questions.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1038/nmeth.4224
+    \endverb
+    \field{pages}{360–373}
+    \field{title}{A guide to light-sheet fluorescence microscopy for multiscale
+  imaging}
+    \verb{url}
+    \verb https://www.nature.com/articles/nmeth.4224#citeas
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Weber2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WM}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mickoleit},
+         familyi={M\bibinitperiod},
+         given={Michaela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huisken},
+         familyi={H\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Animals, Humans, Image Enhancement, Imaging,
+  Three-Dimensional/*methods, Microscopy, Confocal/methods,
+  Fluorescence/methods, Time-Lapse Imaging/methods, Developmental biology,
+  Fluorescence microscopy, Image processing, Light sheet microscopy, Mounting,
+  Selective plane illumination microscopy, Three-dimensional imaging,
+  Ultramicroscopy, Zebrafish}
+    \strng{namehash}{WMMMHJ1}
+    \strng{fullhash}{WMMMHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This chapter introduces the concept of light sheet microscopy along with
+  practical advice on how to design and build such an instrument. Selective
+  plane illumination microscopy is presented as an alternative to confocal
+  microscopy due to several superior features such as high-speed full-frame
+  acquisition, minimal phototoxicity, and multiview sample rotation. Based on
+  our experience over the last 10 years, we summarize the key concepts in light
+  sheet microscopy, typical implementations, and successful applications. In
+  particular, sample mounting for long time-lapse imaging and the resulting
+  challenges in data processing are discussed in detail.%
+    }
+    \field{pages}{193\bibrangedash 215}
+    \field{title}{Light sheet microscopy.}
+    \field{volume}{123}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Methods in cell biology}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Huisken2004}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HJ}{%
+         family={Huisken},
+         familyi={H\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Swoger},
+         familyi={S\bibinitperiod},
+         given={Jim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DBF}{%
+         family={Del\bibnamedelima Bene},
+         familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Filippo},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wittbrodt},
+         familyi={W\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Stelzer},
+         familyi={S\bibinitperiod},
+         given={Ernst},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ+1}
+    \strng{fullhash}{HJSJDBFWJSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1126/science.1100035
+    \endverb
+    \field{pages}{1007\bibrangedash 9}
+    \field{title}{Optical Sectioning Deep Inside Live Embryos by Selective
+  Plane Illumination Microscopy}
+    \field{volume}{305}
+    \field{journaltitle}{Science (New York, N.Y.)}
+    \field{month}{09}
+    \field{year}{2004}
+  \endentry
+
+  \entry{NikonLS}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Light Sheet Fluorescence Microscopy}
+    \verb{url}
+    \verb https://www.microscopyu.com/techniques/light-sheet/light-sheet-fluore
+    \verb scence-microscopy
+    \endverb
+    \field{urlday}{28}
+    \field{urlmonth}{09}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{North2006}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NAJ}{%
+         family={North},
+         familyi={N\bibinitperiod},
+         given={Alison\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NAJ1}
+    \strng{fullhash}{NAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {Imaging can be thought of as the most direct of experiments. You see
+  something; you report what you see. If only things were truly this simple.
+  Modern imaging technology has brought about a revolution in the kinds of
+  questions we can approach, but this comes at the price of increasingly
+  complex equipment. Moreover, in an attempt to market competing systems, the
+  microscopes have often been inappropriately described as easy to use and
+  suitable for near-beginners. Insufficient understanding of the experimental
+  manipulations and equipment set-up leads to the introduction of errors during
+  image acquisition. In this feature, I review some of the most common
+  practical pitfalls faced by researchers during image acquisition, and how
+  they can affect the interpretation of the experimental data. This article is
+  targeted neither to the microscopy gurus who push forward the frontiers of
+  imaging technology nor to my imaging specialist colleagues who may wince at
+  the overly simplistic comments and lack of detail. Instead, this is for
+  beginners who gulp with alarm when they hear the word “confocal pinhole”
+  or sigh as they watch their cells fade and die in front of their very eyes
+  time and time again at the microscope. Take heart, beginners, if microscopes
+  were actually so simple then many people (including myself) would suddenly be
+  out of a job! }%
+    }
+    \verb{doi}
+    \verb 10.1083/jcb.200507103
+    \endverb
+    \verb{eprint}
+    \verb https://rupress.org/jcb/article-pdf/172/1/9/1322699/jcb17219.pdf
+    \endverb
+    \field{issn}{0021-9525}
+    \field{number}{1}
+    \field{pages}{9\bibrangedash 18}
+    \field{title}{{Seeing is believing? A beginners' guide to practical
+  pitfalls in image acquisition }}
+    \verb{url}
+    \verb https://doi.org/10.1083/jcb.200507103
+    \endverb
+    \field{volume}{172}
+    \field{journaltitle}{Journal of Cell Biology}
+    \field{month}{01}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Lect08}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BO}{%
+         family={Baumann},
+         familyi={B\bibinitperiod},
+         given={Otto},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BO1}
+    \strng{fullhash}{BO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Polarization DIC 2019}
+    \field{journaltitle}{Lecture slides}
+    \field{year}{2019}
+  \endentry
+
+  \entry{LeicaMicro}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Pinhole Effect in Confocal Microscopes}
+    \verb{url}
+    \verb https://www.leica-microsystems.com/science-lab/pinhole-effect-in-conf
+    \verb ocal-microscopes/
+    \endverb
+    \field{urlday}{08}
+    \field{urlmonth}{03}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{ZeissCamp}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Education in Microscopy and Digital Imaging}
+    \verb{url}
+    \verb http://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.htm
+    \verb l
+    \endverb
+    \field{urlday}{08}
+    \field{urlmonth}{03}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{NikonMicro}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Spectral Imaging and Linear Unmixing}
+    \verb{url}
+    \verb https://www.microscopyu.com/techniques/confocal/spectral-imaging-and-
+    \verb linear-unmixing
+    \endverb
+    \field{urlday}{25}
+    \field{urlmonth}{09}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Lect11}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GR}{%
+         family={Gräf},
+         familyi={G\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GR1}
+    \strng{fullhash}{GR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Optical sectioning 2019 02}
+    \field{journaltitle}{Lecture slides}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ZeissCamp2}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Practical Considerations for Spectral Imaging}
+    \verb{url}
+    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/considera
+    \verb tions.html
+    \endverb
+    \field{urlday}{25}
+    \field{urlmonth}{09}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{ZeissCamp3}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Introduction to Spectral Imaging and Linear Unmixing}
+    \verb{url}
+    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/introduct
+    \verb ion.html
+    \endverb
+    \field{urlday}{25}
+    \field{urlmonth}{10}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Fish2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FKN}{%
+         family={Fish},
+         familyi={F\bibinitperiod},
+         given={Kenneth\bibnamedelima N.},
+         giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{axial resolution, fluorescence microscopy, live cell imaging,
+  receptor trafficking, neurons}
+    \strng{namehash}{FKN1}
+    \strng{fullhash}{FKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract Total internal reflection fluorescence (TIRF) microscopy (TIRFM)
+  is an elegant optical technique that provides for the excitation of
+  fluorophores in an extremely thin axial region (“optical section”). The
+  method is based on the principle that when excitation light is totally
+  internally reflected in a transparent solid (e.g., coverglass) at its
+  interface with liquid, an electromagnetic field, called the evanescent wave,
+  is generated in the liquid at the solid-liquid interface and is the same
+  frequency as the excitation light. Since the intensity of the evanescent wave
+  exponentially decays with distance from the surface of the solid, only
+  fluorescent molecules within a few hundred nanometers of the solid are
+  efficiently excited. This unit will briefly review the history, optical
+  theory, and different hardware configurations used in TIRFM. In addition, it
+  will provide experimental details and methodological considerations for
+  studying receptors at the plasma membrane in neurons. Curr. Protoc. Cytom.
+  50:12.18.1-12.18.13. © 2009 by John Wiley \& Sons, Inc.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/0471142956.cy1218s50
+    \endverb
+    \verb{eprint}
+    \verb https://currentprotocols.onlinelibrary.wiley.com/doi/pdf/10.1002/0471
+    \verb 142956.cy1218s50
+    \endverb
+    \field{number}{1}
+    \field{pages}{12.18.1\bibrangedash 12.18.13}
+    \field{title}{Total Internal Reflection Fluorescence (TIRF) Microscopy}
+    \verb{url}
+    \verb https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471
+    \verb 142956.cy1218s50
+    \endverb
+    \field{volume}{50}
+    \field{journaltitle}{Current Protocols in Cytometry}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Sanderson2014}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SMJ}{%
+         family={Sanderson},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BMD}{%
+         family={Bootman},
+         familyi={B\bibinitperiod},
+         given={Martin\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Animals, Fluorescence, Humans, Microscopy,
+  Fluorescence/instrumentation/*methods, Optical Devices}
+    \strng{namehash}{SMJ+1}
+    \strng{fullhash}{SMJSIPIBMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Fluorescence microscopy is a major tool with which to monitor cell
+  physiology. Although the concepts of fluorescence and its optical separation
+  using filters remain similar, microscope design varies with the aim of
+  increasing image contrast and spatial resolution. The basics of wide-field
+  microscopy are outlined to emphasize the selection, advantages, and correct
+  use of laser scanning confocal microscopy, two-photon microscopy, scanning
+  disk confocal microscopy, total internal reflection, and super-resolution
+  microscopy. In addition, the principles of how these microscopes form images
+  are reviewed to appreciate their capabilities, limitations, and constraints
+  for operation.%
+    }
+    \field{issue}{10}
+    \field{pages}{pdb.top071795}
+    \field{title}{Fluorescence microscopy.}
+    \field{volume}{2014}
+    \field{journaltitle}{Cold Spring Harbor protocols}
+    \field{month}{10}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Chen2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CF}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Fei},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TPW}{%
+         family={Tillberg},
+         familyi={T\bibinitperiod},
+         given={Paul\bibnamedelima W.},
+         giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=BES}{%
+         family={Boyden},
+         familyi={B\bibinitperiod},
+         given={Edward\bibnamedelima S.},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Acrylamide, Acrylamides, Acrylates, Animals, Coated Pits,
+  Cell-Membrane/*ultrastructure, Fluorescent Dyes, Gels, HEK293 Cells,
+  Hippocampus/*ultrastructure, Humans, Mice, Inbred C57BL, Transgenic,
+  Microscopy/*methods, Microscopy, Confocal/methods, Fluorescence/methods,
+  Microtubules/*ultrastructure, Optical Imaging/*methods, Polymers, Tissue
+  Fixation}
+    \strng{namehash}{CFTPWBES1}
+    \strng{fullhash}{CFTPWBES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In optical microscopy, fine structural details are resolved by using
+  refraction to magnify images of a specimen. We discovered that by
+  synthesizing a swellable polymer network within a specimen, it can be
+  physically expanded, resulting in physical magnification. By covalently
+  anchoring specific labels located within the specimen directly to the polymer
+  network, labels spaced closer than the optical diffraction limit can be
+  isotropically separated and optically resolved, a process we call expansion
+  microscopy (ExM). Thus, this process can be used to perform scalable
+  superresolution microscopy with diffraction-limited microscopes. We
+  demonstrate ExM with apparent ~70-nanometer lateral resolution in both
+  cultured cells and brain tissue, performing three-color superresolution
+  imaging of ~10(7) cubic micrometers of the mouse hippocampus with a
+  conventional confocal microscope.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.1260088
+    \endverb
+    \field{edition}{2015/01/15}
+    \field{issn}{0036-8075}
+    \field{number}{25592419}
+    \field{pages}{543\bibrangedash 548}
+    \field{title}{Optical imaging. Expansion microscopy}
+    \verb{url}
+    \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4312537/
+    \endverb
+    \field{volume}{347}
+    \field{journaltitle}{Science (New York, N.Y.)}
+    \field{month}{01}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Huff2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Huff},
+         familyi={H\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    With Airyscan, ZEISS introduced a new detector concept for confocal
+  laser-scanning microscopy (LSM). Whereas traditional LSM designs use a
+  combination of pinhole and single-point detectors, Airyscan is a 32-channel
+  gallium arsenide phosphide photomultiplier tube (GaAsP-PMT) area detector
+  that collects a pinhole-plane image at every scan position. Each detector
+  element functions as a single, very small pinhole. Knowledge about the beam
+  path and the spatial distribution of each detector channel enables very
+  light-efficient imaging with improved resolution and signal-to-noise ratio.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmeth.f.388
+    \endverb
+    \field{issn}{1548-7105}
+    \field{number}{12}
+    \field{pages}{i\bibrangedash ii}
+    \field{title}{The Airyscan detector from ZEISS: confocal imaging with
+  improved signal-to-noise ratio and super-resolution}
+    \verb{url}
+    \verb https://doi.org/10.1038/nmeth.f.388
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Bergter2016}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=BA}{%
+         family={Bergter},
+         familyi={B\bibinitperiod},
+         given={Annette},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huff},
+         familyi={H\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAHJ1}
+    \strng{fullhash}{BAHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.13140/RG.2.2.23859.84007
+    \endverb
+    \field{title}{ZEISS LSM 880 with Airyscan - Introducing the Fast
+  Acquisition Mode}
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Lect10}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GR}{%
+         family={Gräf},
+         familyi={G\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GR1}
+    \strng{fullhash}{GR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Optical sectioning 2019 01}
+    \field{journaltitle}{Lecture slides}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Tetra}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{TetraSpeck™ Microspheres, 0.2 µm, fluorescent
+  blue/green/orange/dark red}
+    \verb{url}
+    \verb https://www.thermofisher.com/order/catalog/product/T7280#/T7280
+    \endverb
+    \field{urlday}{02}
+    \field{urlmonth}{10}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{DecArtif}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Artifacts and Aberrations in Deconvolution Analysis}
+    \verb{url}
+    \verb https://micro.magnet.fsu.edu/primer/digitalimaging/deconvolution/deco
+    \verb nartifacts.html
+    \endverb
+    \field{urlday}{03}
+    \field{urlmonth}{10}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Zimmermann1997}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZB}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Walz},
+         familyi={W\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZBWB1}
+    \strng{fullhash}{ZBWB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    1. Blowfly salivary glands have been used extensively as a model system for
+  the analysis of inositol phosphate-dependent signal transduction. To detect
+  and characterize changes in intracellular free calcium ([Ca2+]i) that might
+  be expected to be triggered by stimulation with serotonin (5-HT), we have
+  carried out digital calcium-imaging experiments on intact glands using the
+  Ca2+-sensitive dye fura-2. 2. 5-HT (1-10 nM) induced repetitive transient
+  increases in [Ca2+]i, i.e. Ca2+ spikes whose frequency was a function of
+  agonist concentration (EC50 = 2.8 nM). 3. Pre-incubation in EGTA decreased
+  the frequency but did not inhibit spiking. Thapsigargin abolished periodic
+  spike activity indicating that the [Ca2+]i rise results from Ca2+ release.
+  Neither caffeine (10 mM) nor ryanodine (10 and 50 microM) induced increases
+  in [Ca2+]i. 4. Oscillatory activity in individual cells was synchronized by
+  regenerative intercellular Ca2+ waves that propagated over distances greater
+  than 400 microm. Colliding waves annihilated each other. 5. Desynchronization
+  of the oscillation pattern by 100 microM 1-octanol suggests the involvement
+  of gap junctions and an intracellular messenger in wave propagation. 6. Local
+  stimulation of glands elicited [Ca2+]i elevations in the stimulated area, but
+  not in adjacent cells, indicating that local increases in [Ca2+]i are not
+  sufficient to trigger Ca2+ waves. However, local stimulation was capable of
+  evoking propagating Ca2+ waves when combined with low-dose 5-HT stimulation
+  of the whole gland. 7. The data are consistent with the hypothesis that: (1)
+  Ca2+ acts as the intercellular messenger and modulates its own release via
+  positive and negative feedback on the inosital 1,4,5-trisphosphate (InsP3)
+  receptor, and (2) sensitization of the InsP3 receptor to Ca2+ by InsP3 is
+  required for the propagation of intercellular Ca2+ waves, as proposed for
+  intracellular Ca2+ waves in Xenopus oocytes.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1113/jphysiol.1997.sp021995
+    \endverb
+    \verb{eprint}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1997.
+    \verb sp021995
+    \endverb
+    \field{number}{1}
+    \field{pages}{17\bibrangedash 28}
+    \field{title}{Serotonin-induced intercellular calcium waves in salivary
+  glands of the blowfly Calliphora erythrocephala.}
+    \verb{url}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1997.
+    \verb sp021995
+    \endverb
+    \field{volume}{500}
+    \field{journaltitle}{The Journal of Physiology}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Islam2012}{book}{}
+    \name{author}{1}{}{%
+      {{hash=IMS}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Md.\bibnamedelima Shahidul},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IMS1}
+    \strng{fullhash}{IMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/978-3-030-12457-1
+    \endverb
+    \field{isbn}{978-94-007-2888-2}
+    \field{title}{Calcium Signaling}
+    \field{month}{04}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Politi2018}{article}{}
+    \name{author}{7}{}{%
+      {{hash=PAZ}{%
+         family={Politi},
+         familyi={P\bibinitperiod},
+         given={A.\bibnamedelima Z.},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Yin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Walther},
+         familyi={W\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HMJ}{%
+         family={Hossain},
+         familyi={H\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wachsmuth},
+         familyi={W\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Ellenberg},
+         familyi={E\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PAZ+1}
+    \strng{fullhash}{PAZCYWNHMJKBWMEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The ability to tag a protein at its endogenous locus with a fluorescent
+  protein (FP) enables quantitative understanding of protein dynamics at the
+  physiological level. Genome-editing technology has now made this powerful
+  approach routinely applicable to mammalian cells and many other model
+  systems, thereby opening up the possibility to systematically and
+  quantitatively map the cellular proteome in four dimensions. 3D time-lapse
+  confocal microscopy (4D imaging) is an essential tool for investigating
+  spatial and temporal protein dynamics; however, it lacks the required
+  quantitative power to make the kind of absolute and comparable measurements
+  required for systems analysis. In contrast, fluorescence correlation
+  spectroscopy (FCS) provides quantitative proteomic and biophysical parameters
+  such as protein concentration, hydrodynamic radius, and oligomerization but
+  lacks the capability for high-throughput application in 4D spatial and
+  temporal imaging. Here we present an automated experimental and computational
+  workflow that integrates both methods and delivers quantitative 4D imaging
+  data in high throughput. These data are processed to yield a calibration
+  curve relating the fluorescence intensities (FIs) of image voxels to the
+  absolute protein abundance. The calibration curve allows the conversion of
+  the arbitrary FIs to protein amounts for all voxels of 4D imaging stacks.
+  Using our workflow, users can acquire and analyze hundreds of FCS-calibrated
+  image series to map their proteins of interest in four dimensions. Compared
+  with other protocols, the current protocol does not require additional
+  calibration standards and provides an automated acquisition pipeline for FCS
+  and imaging data. The protocol can be completed in 1 d.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1038/nprot.2018.040
+    \endverb
+    \field{pages}{1445–1464}
+    \field{title}{Quantitative mapping of fluorescently tagged cellular
+  proteins using FCS-calibrated four-dimensional imaging}
+    \verb{url}
+    \verb https://www.nature.com/articles/nprot.2018.040#citeas
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Nature Protocols}
+    \field{year}{2018}
+  \endentry
+
+  \entry{YeaGenRpl3}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{RPL3 / YOR063W Overview}
+    \verb{url}
+    \verb https://www.yeastgenome.org/locus/S000005589
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{10}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Bacia2006}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BK}{%
+         family={Bacia},
+         familyi={B\bibinitperiod},
+         given={Kirsten},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KSA}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Sally\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schwille},
+         familyi={S\bibinitperiod},
+         given={Petra},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKKSASP1}
+    \strng{fullhash}{BKKSASP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Cell biologists strive to characterize molecular interactions directly in
+  the intracellular environment. The intrinsic resolution of optical
+  microscopy, however, allows visualization of only coarse subcellular
+  localization. By extracting information from molecular dynamics, fluorescence
+  cross-correlation spectroscopy (FCCS) grants access to processes on a
+  molecular scale, such as diffusion, binding, enzymatic reactions and
+  codiffusion, and has become a valuable tool for studies in living cells. Here
+  we review basic principles of FCCS and focus on seminal applications,
+  including examples of intracellular signaling and trafficking. We consider
+  FCCS in the context of fluorescence resonance energy transfer and multicolor
+  imaging techniques and discuss application strategies and recent technical
+  advances.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmeth822
+    \endverb
+    \field{issn}{1548-7105}
+    \field{number}{2}
+    \field{pages}{83\bibrangedash 89}
+    \field{title}{Fluorescence cross-correlation spectroscopy in living cells}
+    \verb{url}
+    \verb https://doi.org/10.1038/nmeth822
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Dunsing2018}{article}{}
+    \name{author}{6}{}{%
+      {{hash=DV}{%
+         family={Dunsing},
+         familyi={D\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Luckner},
+         familyi={L\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zühlke},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PRA}{%
+         family={Petazzi},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Herrmann},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chiantia},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DV+1}
+    \strng{fullhash}{DVLMZBPRAHACS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Fluorescence fluctuation spectroscopy has become a popular toolbox for
+  non-disruptive analysis of molecular interactions in living cells. The
+  quantification of protein oligomerization in the native cellular environment
+  is highly relevant for a detailed understanding of complex biological
+  processes. An important parameter in this context is the molecular
+  brightness, which serves as a direct measure of oligomerization and can be
+  easily extracted from temporal or spatial fluorescence fluctuations. However,
+  fluorescent proteins (FPs) typically used in such studies suffer from complex
+  photophysical transitions and limited maturation, inducing non-fluorescent
+  states. Here, we show how these processes strongly affect molecular
+  brightness measurements. We perform a systematic characterization of
+  non-fluorescent states for commonly used FPs and provide a simple guideline
+  for accurate, unbiased oligomerization measurements in living cells. Further,
+  we focus on novel red FPs and demonstrate that mCherry2, an mCherry variant,
+  possesses superior properties with regards to precise quantification of
+  oligomerization.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1038/s41598-018-28858-0
+    \endverb
+    \field{number}{10634}
+    \field{title}{Optimal fluorescent protein tags for quantifying protein
+  oligomerization in living cells}
+    \verb{url}
+    \verb https://www.nature.com/articles/s41598-018-28858-0#citeas
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{Scientific Reports}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Yu2011}{article}{}
+    \name{author}{4}{}{%
+      {{hash=YBY}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Bo\bibnamedelima Yang},
+         giveni={B\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Elbuken},
+         familyi={E\bibinitperiod},
+         given={Caglar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RCL}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Carolyn\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HJP}{%
+         family={Huissoon},
+         familyi={H\bibinitperiod},
+         given={Jan\bibnamedelima Paul},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YBY+1}
+    \strng{fullhash}{YBYECRCLHJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The study of yeast cell morphology requires consistent identification of
+  cell cycle phases based on cell bud size. A computer-based image processing
+  algorithm is designed to automatically classify microscopic images of yeast
+  cells in a microfluidic channel environment. The images were enhanced to
+  reduce background noise, and a robust segmentation algorithm is developed to
+  extract geometrical features including compactness, axis ratio, and bud size.
+  The features are then used for classification, and the accuracy of various
+  machine-learning classifiers is compared. The linear support vector machine,
+  distance-based classification, and k-nearest-neighbor algorithm were the
+  classifiers used in this experiment. The performance of the system under
+  various illumination and focusing conditions were also tested. The results
+  suggest it is possible to automatically classify yeast cells based on their
+  morphological characteristics with noisy and low-contrast images.%
+    }
+    \verb{doi}
+    \verb 10.1117/1.3589100
+    \endverb
+    \field{number}{6}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Image processing and classification algorithm for yeast cell
+  morphology in a microfluidic chip}
+    \verb{url}
+    \verb https://doi.org/10.1117/1.3589100
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{Journal of Biomedical Optics}
+    \field{month}{06}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Krueger2012}{article}{}
+    \name{author}{8}{}{%
+      {{hash=KA}{%
+         family={Krüger},
+         familyi={K\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Batsios},
+         familyi={B\bibinitperiod},
+         given={Petros},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Baumann},
+         familyi={B\bibinitperiod},
+         given={Otto},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Luckert},
+         familyi={L\bibinitperiod},
+         given={Eva},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schwarz},
+         familyi={S\bibinitperiod},
+         given={Heinz},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Stick},
+         familyi={S\bibinitperiod},
+         given={Reimer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Irene},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gräf},
+         familyi={G\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KABPBOLESHSRMIGR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Lamins build the nuclear lamina and are required for chromatin
+  organization, gene expression, cell cycle progression, and mechanical
+  stabilization. Despite these universal functions, lamins have so far been
+  found only in metazoans. We have identified protein NE81 in Dictyostelium,
+  which has properties that justify its denomination as a lamin-like protein in
+  a lower eukaryote. This is based on its primary structure, subcellular
+  localization, and regulation during mitosis, and its requirement of the
+  C-terminal CaaX box as a posttranslational processing signal for proper
+  localization. Our knockout and overexpression mutants revealed an important
+  role for NE81 in nuclear integrity, chromatin organization, and mechanical
+  stability of cells. All our results are in agreement with a role for NE81 in
+  formation of a nuclear lamina. This function is corroborated by localization
+  of Dictyostelium NE81 at the nuclear envelope in human cells. The discovery
+  of a lamin-like protein in a unicellular organism is not only intriguing in
+  light of evolution, it may also provide a simple experimental platform for
+  studies of the molecular basis of laminopathies.%
+    }
+    \verb{doi}
+    \verb 10.1091/mbc.e11-07-0595
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1091/mbc.e11-07-0595
+    \endverb
+    \field{note}{PMID: 22090348}
+    \field{number}{2}
+    \field{pages}{360\bibrangedash 370}
+    \field{title}{Characterization of NE81, the first lamin-like nucleoskeleton
+  protein in a unicellular organism}
+    \verb{url}
+    \verb https://doi.org/10.1091/mbc.e11-07-0595
+    \endverb
+    \field{volume}{23}
+    \field{journaltitle}{Molecular Biology of the Cell}
+    \field{year}{2012}
+  \endentry
+
+  \entry{UniprotErg24}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{UniProtKB - P32462 (ERG24{\_}YEAST)}
+    \verb{url}
+    \verb https://www.uniprot.org/uniprot/P32462
+    \endverb
+    \field{urlday}{08}
+    \field{urlmonth}{02}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Batsios2019}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BP}{%
+         family={Batsios},
+         familyi={B\bibinitperiod},
+         given={Petros},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gräf},
+         familyi={G\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KMP}{%
+         family={Koonce},
+         familyi={K\bibinitperiod},
+         given={Michael\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=LDA}{%
+         family={Larochelle},
+         familyi={L\bibinitperiod},
+         given={Denis\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Irene},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{nuclear envelope, Dictyostelium, lamin, NET, centrosome, centromere}
+    \strng{namehash}{BP+1}
+    \strng{fullhash}{BPGRKMPLDAMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The nuclear envelope consists of the outer and the inner nuclear membrane,
+  the nuclear lamina and the nuclear pore complexes, which regulate nuclear
+  import and export. The major con-stituent of the nuclear lamina of
+  Dictyostelium is the lamin NE81. It can form filaments like B-type lamins and
+  it interacts with Sun1, as well as with the LEM/HeH-family protein Src1. Sun1
+  and Src1 are nuclear envelope transmembrane proteins involved in the
+  centrosome-nucleus connection and nuclear envelope stability at the nucleolar
+  regions, respectively. In conjunction with a KASH-domain protein, Sun1
+  usually forms a so-called LINC complex. Two proteins with functions
+  reminiscent of KASH-domain proteins at the outer nuclear membrane of
+  Dictyostelium are known; interaptin which serves as an actin connector and
+  the kinesin Kif9 which plays a role in the microtubule-centrosome connector.
+  However, both of these lack the conserved KASH-domain. The link of the
+  centrosome to the nuclear envelope is essential for the insertion of the
+  centrosome into the nuclear envelope and the appropriate spindle formation.
+  Moreover, centrosome insertion is involved in permeabiliza-tion of the
+  mitotic nucleus, which ensures access of tubulin dimers and spindle assembly
+  factors. Our recent progress in identifying key molecular players at the
+  nuclear envelope of Dictyosteliumpromises further insights into the
+  mechanisms of nuclear envelope dynamics.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1387/ijdb.190184rg
+    \endverb
+    \field{pages}{509\bibrangedash 519}
+    \field{title}{Nuclear envelope organization in Dictyostelium discoideum}
+    \field{volume}{63}
+    \field{journaltitle}{International Journal of Developmental Biology}
+    \field{year}{2019}
+  \endentry
+
+  \entry{LectLCI}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GR}{%
+         family={Gräf},
+         familyi={G\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GR1}
+    \strng{fullhash}{GR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Optical sectioning and 3-dimensional imaging - LCI}
+    \field{journaltitle}{Lecture slides - LCI}
+    \field{year}{2019}
+  \endentry
+\enddatalist
+\endinput

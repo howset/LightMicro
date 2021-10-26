@@ -1,0 +1,104 @@
+% !TEX TS-program = pdflatex
+% !TEX root = LightMicroRep.tex
+
+%#############
+%### Preamble ###
+%#############
+
+\documentclass[a4paper,oneside,openright,titlepage,
+               headinclude,,footinclude,BCOR5mm,
+               numbers=noenddot,cleardoublepage=empty,
+               tablecaptionabove]{scrreprt}
+        
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{animate} %to include animation
+%\usepackage{tikz} %to include tikzit drawings
+\usepackage{lipsum}
+\usepackage{shapepar}
+\usepackage{pifont}
+\usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,listings]{classicthesis}
+\usepackage{arsclassica}
+\usepackage{enumitem}	%to make [noitemsep] available when itemizing
+\usepackage{subfig}
+	\renewcommand{\thesubfigure}{\Alph{subfigure}} %to make captions on figures using capital letters
+	\captionsetup{format=plain, font=small, labelfont=bf} %to avoid hanging captions
+\usepackage[backend=bibtex,style=numeric,sorting=none,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+	\addbibresource{literature.bib} %path to bib file
+\usepackage{fontawesome5} % for r and python symbols
+\usepackage{array}\usepackage{makecell} % for two lines on tables
+\usepackage{pdfpages} %to add pdf pages
+
+%##############
+%### Style, etc. ###
+%##############
+\input{arsclassica-settings}
+
+%##############
+%### What to print. ###
+%##############
+
+%\includeonly{
+%Frontpage/Titlepage,
+%Frontpage/Contents,
+%Exp_1_Lightsheet/Lightsheet,
+%Exp_2_Microphotography/Microphotography,
+%Exp_3_LSM/LSM,
+%Exp_4_TIRF/TIRF,
+%Exp_5_Expansion/Expansion,
+%Exp_6_Airyscan/Airyscan,
+%Exp_7_Deconvolution/Deconvolution,
+%Exp_8_CaImaging/CaImaging,
+%Exp_9_FCS/FCS,
+%Exp_10_FRAP/FRAP
+%}
+
+
+%##############
+%### Front Matter ###
+%##############
+
+\begin{document}
+
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\include{Frontpage/Titlepage}
+	\include{Frontpage/Contents}
+
+
+%##########
+%### Body ###
+%##########
+
+	\pagenumbering{arabic}
+	\pagestyle{plain}
+	\pagestyle{scrheadings} 
+	\include{Exp_1_Lightsheet/Lightsheet}
+	\include{Exp_2_Microphotography/Microphotography}
+	\include{Exp_3_LSM/LSM}
+	\include{Exp_4_TIRF/TIRF}
+	\include{Exp_5_Expansion/Expansion}
+	\include{Exp_6_Airyscan/Airyscan}
+	\include{Exp_7_Deconvolution/Deconvolution}
+	\include{Exp_8_CaImaging/CaImaging}
+	\include{Exp_9_FCS/FCS}
+		\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{Exp_9_FCS/Res/TR_wc.pdf}
+		\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{Exp_9_FCS/Res/TR_mobu.pdf}
+	\include{Exp_10_FRAP/FRAP}
+
+%##############
+%### Back Matter ###
+%##############
+
+	\newpage
+	\addcontentsline{toc}{chapter}{References}
+	\printbibliography
+
+\end{document}

@@ -1,0 +1,50 @@
+---
+title: "FCS Test Report"
+author: "Howard Setyamukti"
+output: 
+  pdf_document: 
+    keep_tex: yes
+    highlight: zenburn
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r loadrpl, echo=FALSE}
+rpl <- read.csv('Data/rpl3.csv',sep=';', header = TRUE)
+## Only whole cells
+idtf <- rpl[,2]=='whole cell'
+rpl <- rpl[idtf,]
+## Exclude S phase
+idtf1 <- rpl[,1]!='late S'
+rpl <- rpl[idtf1,]
+rpl <- rpl[c(1,2,5)] #Choose only relevant columns
+colnames(rpl) <- c('CellCyclePhase', 'Morphology','Density') #Rename cols for better legends
+rpl$Morphology<-factor(rpl$Morphology) #Set this column as factor
+rpl$CellCyclePhase<-factor(rpl$CellCyclePhase)
+```
+
+## Data Summary
+Aggregated data, termed as whole cells (mother+buds), exclude S phase due to only 1 observation.
+```{r sumrpl}
+summary(rpl)
+```
+
+-----  
+
+## ANOVA
+The following is the result of ANOVA where it is demonstrated that there is no significant difference between groups.
+```{r aovrpl}
+res.aov <- aov(Density ~ CellCyclePhase, data = rpl)
+summary(res.aov)
+```
+-----
+
+## Validity Check
+Normality test, confirmed by Shapiro-Wilk test of normality.
+```{r normcheck}
+#plot(res.aov, 2)
+aov_residuals <- residuals(object = res.aov) 
+shapiro.test(x = aov_residuals) 
+```

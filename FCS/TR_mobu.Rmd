@@ -1,0 +1,50 @@
+---
+title: "FCS Test Report"
+author: "Howard Setyamukti"
+output: 
+  pdf_document: 
+    keep_tex: yes
+    highlight: zenburn
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r loadrpl, echo=FALSE}
+rpl <- read.csv('Data/rpl3.csv',sep=';', header = TRUE)
+## Exclude whole cells
+idtf <- rpl[,2]!='whole cell'
+rpl <- rpl[idtf,]
+## Exclude G1 phase
+idtf1 <- rpl[,1]!='G1'
+rpl <- rpl[idtf1,]
+rpl <- rpl[c(1,2,5)] #Choose only relevant columns
+colnames(rpl) <- c('CellCyclePhase', 'Morphology','Density') #Rename cols for better legends
+rpl$Morphology<-factor(rpl$Morphology) #Set this column as factor
+rpl$CellCyclePhase<-factor(rpl$CellCyclePhase)
+```
+
+## Data Summary
+Separated data, termed as mother and bud, exclude G1 phase.
+```{r sumrpl}
+summary(rpl)
+```
+
+-----  
+
+## ANOVA
+The following is the result of ANOVA where it is demonstrated that there is significant difference between groups (mothers and buds).
+```{r aovrpl}
+res.aov <- aov(Density ~ Morphology, data = rpl)
+summary(res.aov)
+```
+-----
+
+## Validity Check
+Normality test, confirmed by Shapiro-Wilk test of normality.
+```{r normcheck}
+#plot(res.aov, 2)
+aov_residuals <- residuals(object = res.aov) 
+shapiro.test(x = aov_residuals) 
+```
