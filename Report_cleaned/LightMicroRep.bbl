@@ -308,18 +308,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{ZeissCamp2}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{Practical Considerations for Spectral Imaging}
-    \verb{url}
-    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/considera
-    \verb tions.html
-    \endverb
-    \field{urlday}{25}
-    \field{urlmonth}{09}
-    \field{urlyear}{2021}
-  \endentry
-
   \entry{ZeissCamp3}{online}{}
     \field{labeltitlesource}{title}
     \field{title}{Introduction to Spectral Imaging and Linear Unmixing}
@@ -329,6 +317,18 @@
     \endverb
     \field{urlday}{25}
     \field{urlmonth}{10}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{ZeissCamp2}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Practical Considerations for Spectral Imaging}
+    \verb{url}
+    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/considera
+    \verb tions.html
+    \endverb
+    \field{urlday}{25}
+    \field{urlmonth}{09}
     \field{urlyear}{2021}
   \endentry
 

@@ -110,7 +110,6 @@ N_{\text{corr}}=\frac{I_{0}}{I}\,N~\text{.}
 \end{align} 
 
 Also necessary to be performed alongside this is the usual background corrections. 
-%by taking measurements of cells without a fluorescent tag are used to obtain the background photon counts for correcting the FCS-derived concentrations and background image FI. Cells expressing the mFP alone are used to calibrate the monomeric fluorophore and estimate whether the POI oligomerizes.
 
 %-------------
 \paragraph{Concentration}
@@ -178,7 +177,6 @@ A widefield acquisitions was performed alongside the LSM acquisitions to aid the
 \subfloat[\label{B}]{\includegraphics[width=0.22\columnwidth]{Exp_9_FCS/Figures/FCS-Image02_cr}}\hspace{0.1mm}
 \subfloat[\label{C}]{\includegraphics[width=0.22\columnwidth]{Exp_9_FCS/Figures/FCS-Image03_cr}}\\
 \caption{\textbf{A}: Illustration of yeast cell morphology through cell cycle progression~\cite{Yu2011}. 
-%It seems like fluo images (Olympus BX51 microscope, 50×/0.5 objective, CCD camera). 
 \textbf{B} and \textbf{C} are examples of widefield acquisition of yeast cells in the experiment showing the identification and numbering of mother and bud cells in different cell cycle.}
 \label{fig:wideyeast}
 \end{figure}
@@ -242,124 +240,3 @@ Evidence to this is further supported by statistical tests that found significan
 %\bibliographystyle{unsrt}
 
 %\bibliography{sample.bib} % The file containing the bibliography
-
-%----------------------------------------------------------------------------------------
-%\begin{table}[h!]
-%\caption{Brightness ($B$)}
-%\begin{center}
-%\begin{tabular}{cccccc}
-%\toprule
-%mono-EGFP (sol)&$B$&mono-EGFP (yeast)&$B$&di-EGFP (yeast)&$B$\\
-%\midrule
-%1:1 A&2.90491&lp1p5-11&0.00414&lp1p5-11&0.00712\\
-%1:1 B&2.97659&lp1p5-12&0.00420&lp1p5-12&0.00749\\
-%1:2 A&4.82091&lp1p5-13&0.00235&lp1p5-13&0.00561\\
-%1:2 B&4.71868&lp1p5-14&0.00433&lp1p5-14&0.00185\\
-%1:4 A&4.96716&lp1p5-15&0.00262&lp1p5-15&0.00493\\
-%1:4 B&5.12617&lp1p5-16&0.00288&lp1p5-16&0.00343\\
-%1:8 A&4.77382&lp1p5-17&0.00404&lp1p5-17&0.00660\\
-%1:8 B&4.68874&lp1p5-18&0.00339&lp1p5-18&0.00290\\
-%1:16 A&3.76271&lp1p5-19&0.00332&lp1p5-19&0.00270\\
-%1:16 B&3.84616&lp1p5-20&0.00257&lp1p5-20&0.00955\\
-%\midrule
-%\textbf{median}&4.70371&&0.003355&&0.00527\\
-%\bottomrule
-%\end{tabular}
-%\label{tab:brightness}
-%\end{center}
-%\scriptsize{}
-%\end{table}
-
-%\begin{table}[h!]
-%\caption{Brightness ($B$) measured by FCS }
-%\begin{center}
-%\begin{tabular}{cccccc}
-%\toprule
-%&mono-EGFP (sol)&mono-EGFP (yeast)&di-EGFP (yeast)\\
-%\midrule
-%&2.90491&0.00414&0.00712\\
-%&2.97659&0.00420&0.00749\\
-%&4.82091&0.00235&0.00561\\
-%&4.71868&0.00433&0.00185\\
-%&4.96716&0.00262&0.00493\\
-%&5.12617&0.00288&0.00343\\
-%&4.77382&0.00404&0.00660\\
-%&4.68874&0.00339&0.00290\\
-%&3.76271&0.00332&0.00270\\
-%&3.84616&0.00257&0.00955\\
-%\midrule
-%\textbf{median}&4.70371&0.003355&0.00527\\
-%\bottomrule
-%\end{tabular}
-%\label{tab:brightness}
-%\end{center}
-%%\scriptsize{\textcolor{red}{maybe just hide this table or simplify-->make only 3 columns.}}
-%\end{table}
-
-%Dear all,
-%sorry for the delayed mail, I wasn't in the lab yesterday and didn't have your mail address with me.
-%Attached you will find the excel sheet with your data and comments (I tried to put as much information as possible
-%:D ). I also attached the publications mentioned in the script for the practical, your 6 images again AND the two project offers from our group which Valentin was mentioning on Monday.
-%
-%For your final protocol it would be interesting to state something about the power of combining regular imaging
-%with FCS because you gain access to quantitative numbers from regular images by calculating a calibration curve
-%from EGFP measurements. Thus, it is necessary to show the two calibration curves (EGFP in solution and yeast
-%cells), and comment on advantages/disadvantages of in vitro (solution) and in vivo (yeast) measurements.
-%Additionally, the brightness of EGFP in solution is higher than in cells, although the calibration curve finally is very
-%similar. But it does mean, that when you calculate values such as the fluorescence probability from EGFP-homo-
-%dimer measurements you could not use the information from solution measurements although the slope at the
-%end is important to determine the number and concentration of your protein of interest (which was Rpl3, a
-%ribosomal protein of the large ribosome subunit). For the EGFP-homo-dimer you only need to state on the
-%fluorescence probability value pf (which was 0.46), no graphs here --> this value is important because it shows
-%you how many fluorescence proteins are not fluorescently active, i.e. do not emit a signal at all; this is important to
-%consider when you want to count proteins in a cell, because otherwise you will underestimate their number.
-%interesting yeast result blots:
-%1. total number of ribosomes (not density) as a function of cell volume --> you will see a correlation between
-%volume and number, meaning the number is not a constant value as thought so far from ensemble
-%measurements (we're on the single cell level here and can even discriminate between mother and bud cell, what
-%is not possible in other assays)
-%2. could be interesting to blot density as a function of cell volume, just to show it's the density that is constant (in
-%that case I would recommend to use the data in column "Mother_bud" that are termed "whole cell" in the final
-%excel sheet.
-%3. A box or scatter blot of the ribosome density of "whole cells" in dependence of the cell cycle phase (G1, S-
-%phase (here you don't have early S cells, so just term it S-phase), G2, Mitosis phase). And additionally for S, G2,
-%mitosis a blot showing mother and bud separately, because you might observe a difference there :)
-%--> if you want to state on these results in more detail, I would just discuss it in a way saying, that so far only an
-%average number of ribosomes was measured throughout the cell cycle phases but our results here show 1. only
-%the density stays constant when you look for whole cells, but with separating bud from mother cells on the single
-%cell level it's indeed the first time we can show, that there are differences throughout the cell cycle when looking in
-%more detail :) actually a veeeerrrryy nice result :D
-
-%\begin{figure}[h!]
-%	\centering
-%	\captionsetup[subfigure]{position=top}
-%	\subfloat[\textcolor{red}{J}\label{A}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image01}}\hspace{0.1mm}
-%	\subfloat[\label{B}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image02}}\hspace{0.1mm}
-%	\subfloat[\label{C}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image03}}\vspace{-0.7em}
-%	\captionsetup[subfigure]{position=bottom}
-%	\subfloat[\label{D}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image04}}\hspace{0.1mm}
-%	\subfloat[\label{E}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image05}}\hspace{0.1mm}
-%	\subfloat[\label{F}]{\includegraphics[width=0.3\columnwidth]{Exp_9_FCS/Figures/FCS-Image06}}\\
-%	\caption{Example widefield. \textcolor{red}{Dont show all, just choose several maybe. What is the scale? Lens?}}
-%	\label{fig:wideyeast}
-%\end{figure}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=0.7\columnwidth]{Exp_9_FCS/Figures/yeastbud}
-%\caption{Yeast cell morphology through cell cycle progression~\cite{Yu2011}. It seems like fluo images (Olympus BX51 microscope, 50×/0.5 objective, CCD camera).}
-%\label{fig:yeastmorph}
-%\end{figure}
-%As shown in Fig.~\ref{fig:yeastmorph}, cells in the G1 phase are characterized by a simple ellipsoidal shape. When cells enter the S phase, a readily visible bud emerges and, as the bud size grows larger, the cell enters the M phase. The ability to accurately identify yeast cells in different division phases, especially cells in the S phase, is critical in the modeling of cell cycles~\cite{Yu2011}.
-
-%\begin{figure}[!h]
-%	\centering
-%	\subfloat[\textcolor{red}{N$_{\text{ribosome}}$ vs vol}\label{nv}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/N-vol1}}\hfil
-%	\subfloat[N$_{\text{ribosome}}$ vs den\label{nd}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/N-den}}\\
-%	\subfloat[vol vs den\label{vd}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/den-vol}}\hfil
-%	\subfloat[vol vs den corr\label{vdc}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/den-vol-corr}}\\
-%	\subfloat[vol vs den no dash\label{vdd}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/den-vol-nodash}}\hfil
-%	\subfloat[\textcolor{red}{vol vs den ddash}\label{vdd}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/den-vol-ddash}}\\
-%	\caption{Correlation plots of N$_{\text{ribosome}}$ against \textbf{A}: volume and \textbf{B}: density.}
-%	\label{fig:corplot}
-%\end{figure}

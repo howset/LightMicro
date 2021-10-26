@@ -36,7 +36,7 @@ Most images were taken using the objective lens EC Epiplan Neofluar 20$\times$/0
 Several different specimens are investigated in this section, namely: bovine endothelial cells, cross section of the rhizome of Lily of the valley, algae and diatomes, cells from a blowfly's abdomen, blowfly salivary gland, and a gold covered coverslip. 
 The particular techniques are discussed in the following section in more detail. 
 The objective lenses used are: Plan-Apochromat 63$\times$/1.4 Oil, Plan-Neofluar 20$\times$/0.5, and C-Apochromat $\times$/1.2 lmm. 
-Full-Width at Half-Maximum (FWHM) calculations are done in \faPython Python (script available publicly on \href{https://gitup.uni-potsdam.de/showard/lightmicroscopy}{\faGitlab~gitUP}, or by request).
+Full-Width at Half-Maximum (FWHM) calculations are done in \faPython Python (script available publicly on \href{https://github.com/howset/LightMicro}{\faGithub~GitHub}, or by request).
 
 %----------------------------------------------------------------------------------------
 %	RESULTS AND DISCUSSION
@@ -161,7 +161,7 @@ This is confirmed by removing the excitation on 405 nm (Fig.~\ref{no405}) where 
 Some strategies can be employed in approaching such a problem, namely by means of mathematical approach that involves applying algorithms termed \textit{channel unmixing} \cite{NikonMicro}\cite{Lect11}. 
 This method does not really work because the algorithm functions on where the intensity is the highest, and in this case, it is on where the nucleus is, therefore it is necessary to decrease DAPI excitation. 
 The result can be seen in Fig.~\ref{unmix} where the bleed-through is significantly reduced although some traces can still be recognized along with some dark spots that seems to trace the mitotracker signal. 
-Another approach is by using multitracking option to enable fast switching between laser lines using an acousto-optic tunable filter (AOTF) to separate excitation (and the subsequent gathering of fluorescence emission) of each fluorophore \cite{ZeissCamp2}. 
+Another approach is by using multitracking option to enable fast switching between laser lines using an acousto-optic tunable filter (AOTF) to separate excitation (and the subsequent gathering of fluorescence emission) of each fluorophore \cite{ZeissCamp3}. 
 The result in Fig.~\ref{multt} shows no bleed-through that can be observed.
 
 \begin{figure}[h!]
@@ -193,45 +193,31 @@ Scalebar is 25 $\mu$m.}
 \end{figure}
 
 A linear unmixing method that can be employed to separate fluorescence signals that are close to one another is the Automatic Component Extraction (ACE) in which a Lambda stack is acquired. 
-The lambda stack is a collection of whole images taken with incrementing wavelength ($\pm$10 nm apart.). 
-Afterwards a spectral fingerprint can be obtained through the maximum signal intensity of each pixel at a particular wavelength. 
+The Lambda stack is a collection of whole images taken with incrementing wavelength ($\pm$10 nm apart.). 
+Usually, spectral information are directly searched from the Lambda stack by inspecting all channels for regions within where no signal is detected in the other channels. 
+That region is then assigned as pure fluorophore/regarded as reference and can be used for the unmixing operation. 
+If such region is not found, then the area with the lowest signal intensity in the other channels is assigned to be a reference.
+This is how ACE works and is mathematically based on a Principal Component Analysis (PCA)~\cite{ZeissCamp2}.
 In Fig.~\ref{ES} is the resulting ACE of a lily of the valley specimen. 
-The emission spectra already indicates that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3, this can indeed be seen by comparing the image acquisition of channel 2 \& 3 (Fig.~\ref{ES}2\&3) that shows the cell walls. 
+The reference spectra shows that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3, this can indeed be seen by comparing the image acquisition of channel 2 \& 3 (Fig.~\ref{ES}2\&3) that shows the cell walls. 
 Whereas channel 1 shows the recognition of different cellular structure (Fig.~\ref{ES}1), probably the chloroplasts. 
 Arguably, channel 2 can also be picked in place of channel 3, however the spectrum separation between channel 3 and channel 1 would make it as a better option to be chosen. 
 This is further confirmed by the composites in Fig.~\ref{Co} in which the combination of channel 1-2 and channel 1-3 show a relatively similar structures that can be recognized although channel 1-3 gives a better overall picture. 
 The combination of channel 2-3 brings no information that is not already contained in channel 1-3. 
 The composite of all 3 channels is also presented here as a comparison. 
-Another channel produced by this function is the residual channel (not shown) which consist of spectral signals that do not match those in the reference library and are not assigned~\cite{ZeissCamp3}
 
-Similarly, the same could be achieved by manual selection of regions. 
+Another channel produced by this function is the residual channel (not shown) which consist of spectral signals that do not match those in the reference library and hence not assigned, this could be signals that arise from saturated pixels or from high background levels~\cite{ZeissCamp2}. 
+Ideally, no signal should be exhibited in this channel. 
+
+Similar result could be achieved by manual selection of regions. 
 This is shown in Fig.~\ref{fig:manlinun}. Here two channels (Ch. 11 and 15) out of 32 from the Lambda stack were chosen corresponding to the recorded fluorescence signal at 518 and 557 nm. 
 It can be seen that the composite of both these channels already gives a complete picture of the sample when compared to the maximum intensity projection of the acquired lambda stack. 
 However, manual selection is very tedious to do. 
 
-%Same fig as below, just smaller
-%\begin{figure}[h!]
-%\centering
-%\captionsetup[subfigure]{position=top}
-%\subfloat[C11\label{c11}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F2_manC11rcr}}\hspace{0.1em}
-%\subfloat[C15\label{c15}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F2_manC11rcr}}\hspace{0.1em}
-%%\captionsetup[subfigure]{position=bottom}
-%\subfloat[Composite\label{manc}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mancomprcr}}	\hspace{0.1em}
-%\subfloat[MIP\label{manm}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mipcomprcr_25um}}\\
-%\caption{Manual choosing from the Lambda stack. Scalebar is 25 $\mu$m.} 
-%\label{fig:manlinun}
-%\end{figure}
-
 \begin{figure}[h!]
 \centering
-%\captionsetup[subfigure]{position=top}
-%\subfloat[Ch11\label{c11}]{\includegraphics[width=.44\columnwidth]{Exp_3_LSM/Figures/MS3/F2_manC11r}}\hspace{0.1mm}
-%\subfloat[Ch15\label{c15}]{\includegraphics[width=.44\columnwidth]{Exp_3_LSM/Figures/MS3/F2_manC15r}}
-\vspace{-0.7em}
-%\hspace{0.1mm}
 \captionsetup[subfigure]{position=bottom}
 \subfloat[Ch. 11 \& 15\label{manc}]{\includegraphics[width=.4\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mipc1115r}}\hspace{0.1mm}
-%\subfloat[Composite\label{manc}]{\includegraphics[width=.4\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mancompr}}\hspace{0.1mm}
 \subfloat[Lambda stack\label{manm}]{\includegraphics[width=.4\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mipcompr3_50um}}\\
 \caption{Manual selection from the Lambda stack. 
 Shown here are the maximum intensity projections of: \textbf{A} only Ch. 11 and 15 and \textbf{B} the whole Lambda stack. 
@@ -251,7 +237,7 @@ Scalebar is 50 $\mu$m.}
 \label{fig:olfp}
 \end{figure}
 
-The function online fingerprinting was used utilizing the previously acquired result from linear unmixing methods to produce an image shown in Fig.~\ref{fig:olfp}. 
+The function online fingerprinting was used utilizing the previously acquired result/reference spectra from linear unmixing methods to produce an image shown in Fig.~\ref{fig:olfp}. 
 Using this function, the process of separating fluorescence spectral overlap was done during image acquisition. 
 In this case, however, it would seem that actually three channels could be appropriate to obtain a complete image as indicated by the inset where a complete image information would not be obtained had one channel be omitted.
 
@@ -338,13 +324,6 @@ Scalebar is 5 $\mu$m.}
 \label{fig:what}
 \end{figure}
 
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=.4\columnwidth]{Exp_3_LSM/Figures/MS3/F6_5um}\\
-%\caption{Blowfly salivary gland. Septate junctions labelled by AlexaFluor568, actin is labelled by AlexaFluor488. Objective lens: C Apochromat 40$\times$/1.2 lmm water immersion. Scalebar is 5 $\mu$m.}
-%\label{fig:what}
-%\end{figure}
-
 Fig.~\ref{fig:what} shows a 3-D perspective of a z-stack image acquisition of a blowfly salivary gland where Fasciclin-III is labelled by anti-Fasciclin-III/AlexaFluor568-conjugated goat anti-mouse-IgG, actin is labelled by AlexaFluor488, and nucleus is labelled by DAPI, which is not visible perhaps due to the possibility that the nucleus has diffused out of the sample because the sample is old. 
 
 The pinhole size of a confocal microscopy affects not only in the xy-dimension, but also the resolution in the z-dimension, as can be seen in Fig.~\ref{fig:goldpin} that shows xz-section of a gold-covered coverslip, where the smaller pinhole size gives a better resolved image. 
@@ -373,85 +352,3 @@ Scalebar is 3 $\mu$m.}
 
 %\bibliography{sample.bib} % The file containing the bibliography
 
-%----------------------------------------------------------------------------------------
-
-%alternative figures
-
-%%\begin{figure}[h]
-%%\centering
-%%\includegraphics[width=\columnwidth]{Exp_3_LSM/Figures/Wrong/LSMagg}
-%%\caption[different scanspeed]{Lily of the valley specimen. A: original image, B: Minimum scanspeed, C: Medium scanspeed, D: Maximum scanspeed, E: Pinhole 0.5 AU, F: Pinhole 1 AU, G: Pinhole 2 AU, H: Pinhole maximum, I: Laser 0.5, J: Laser 2, K: Laser 2 (with averaging 4), L: Laser 5. Objective lens: EC Epiplan Neofluar 20$\times$/0.5 DIC M27.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%%\label{fig:LSMmergedwrong}
-%%\end{figure}
-
-%%\begin{figure}[h]
-%%\centering
-%%\subfloat[Pinhole size 0.5\label{ph0,5}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task3_Pinhole0,5_t}}\hfil
-%%\subfloat[Pinhole size 1\label{ph1}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task3_Pinhole1_t}}\hfil
-%%\subfloat[Pinhole size 2\label{ph2}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task3_Pinhole2_t}}\hfil
-%%\subfloat[Pinhole size max\label{phmax}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task3_Pinholemax_t_10um5}} \\
-%%\caption[different pinhole]{Lily of the valley specimen imaged using different pinhole sizes. Objective lens: EC Epiplan Neofluar 20$\times$/0.5 DIC M27.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%%\label{fig:LSMpinhole}
-%%\end{figure}
-%%
-%%\begin{figure}[h]
-%%\centering
-%%\subfloat[no set\label{noset}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task1_Group3_formag_t_30um5}}\hfil
-%%\subfloat[Scanspeed min\label{ssmin}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Scanspeedmin_t}}\hfil
-%%\subfloat[Scanspeed med\label{ssmed}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Scanspeedmed_t}}\hfil
-%%\subfloat[Scanspeed max\label{ssmax}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Scanspeedmax_t_10um5}}\\
-%%\caption[different scanspeed]{Lily of the valley specimen imaged using different scanning speed. Objective lens: EC Epiplan Neofluar 20$\times$/0.5 DIC M27.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%%\label{fig:LSMscanspeed}
-%%\end{figure}
-%%
-%%\begin{figure}[h]
-%%\centering
-%%\subfloat[Laser 0,5\label{L0,5}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Laser0,5_t}} \quad
-%%\subfloat[Laser 2\label{L2}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Laser2_t}}\\
-%%\subfloat[Laser 2 averaged\label{L2av}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Laser2Average4_t}}\quad
-%%\subfloat[Laser 5\label{L5}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Bcr/Task4_Laser5_t_10um5}}\\
-%%\caption[different pinhole]{Lily of the valley specimen imaged using different laser intensities and averaging functions. Objective lens: EC Epiplan Neofluar 20$\times$/0.5 DIC M27.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%%\label{fig:LSMlaser}
-%%\end{figure}
-
-
-%%\begin{figure}[h]
-%%\centering
-%%\subfloat[Pinhole size 0.5\label{0,5}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Task3_Pinhole0,5}} \quad
-%%\subfloat[Pinhole size 1\label{1}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Task3_Pinhole1}}\\
-%%\subfloat[Pinhole size 2\label{2}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Task3_Pinhole2}}\quad
-%%\subfloat[Pinhole size max\label{max}]{\includegraphics[width=.3\columnwidth]{Exp_3_LSM/Figures/Task3_Pinholemax}} \\
-%%\caption[different pinhole]{Lily of the valley specimen imaged using different pinhole sizes. All images are grey scaled. Objective lens: EC Epiplan Neofluar 20$\times$/0.5 DIC M27.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%%\label{fig:LSMpinhole}
-%%\end{figure}
-
-%\begin{figure}[h!]
-%\centering
-%\captionsetup[subfigure]{position=top}
-%	\subfloat[0.3 AU\label{0.3}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_0,3AU}}\hspace{0.1em}
-%	\subfloat[0.8 AU\label{0.8}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_0,8AU}}\hspace{0.1em}
-%	\subfloat[1 AU\label{1}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_1AU}}\hspace{0.1em}
-%	\subfloat[1.5 AU\label{1.5}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_1,5AU}}	\vspace{-0.7em}
-%\captionsetup[subfigure]{position=bottom}
-%	\subfloat[2 AU\label{2}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_2AU}}	\hspace{0.1em}
-%	\subfloat[3 AU\label{3}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_3AU}}\hspace{0.1em}
-%	\subfloat[4 AU\label{4}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/F7_4AU3um}}\hspace{0.1em}
-%	\subfloat[FWHM\label{fwhm}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/FWHM}}\\
-%\caption{XZ-section of a gold-covered coverslip with different pinhole sizes. Objective lens: Plan Apochromat 63$\times$/1.4 Oil. Scalebar is 3 $\mu$m.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%\label{fig:goldpin}
-%\end{figure}
-
-%\begin{figure}[h!]
-%\centering
-%\captionsetup[subfigure]{position=top}
-%	\subfloat[0.3 AU\label{0.3F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/03AU}}\hspace{0.1em}
-%	\subfloat[0.8 AU\label{0.8F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/08AU}}\hspace{0.1em}
-%	\subfloat[1 AU\label{1F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/1AU}}\hspace{0.1em}
-%	\subfloat[1.5 AU\label{1.5F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/15AU}}	\vspace{-0.7em}
-%\captionsetup[subfigure]{position=bottom}
-%	\subfloat[2 AU\label{2F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/2AU}}	\hspace{0.1em}
-%	\subfloat[4 AU\label{4F}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/4AU}}\hspace{0.1em}
-%	\subfloat[FWHM\label{fwhm}]{\includegraphics[width=.24\columnwidth]{Exp_3_LSM/Figures/MS3/FWHM}}\\
-%\caption{XZ-section of a gold-covered coverslip with different pinhole sizes. Objective lens: Plan Apochromat 63$\times$/1.4 Oil. Scalebar is 3 $\mu$m.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-%\label{fig:goldpin}
-%\end{figure}

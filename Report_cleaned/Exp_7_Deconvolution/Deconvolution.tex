@@ -27,7 +27,7 @@ Inverse convolution (deconvolution) methods can be performed to obtain convoluti
 Two samples, 200 nm Tetraspeck beads and \textit{Dictyostelium discoideum} cells (AX2 line) were used in this experiment. 
 Deconvolution was performed using three methods; (constrained) iterative, fast iterative, and (regularized) inverse filter, each obtained by calculation of PSF from direct measurement in the experiment (measured/M) and through calculation from the parameters of the device (theoretical/T). 
 To obtain the FWHM, a line profile measurement was done for each beads, for each channels. 
-Afterwards procedures for gaussian fit and averaging were done in \faPython Python (script available publicly on \href{https://gitup.uni-potsdam.de/showard/lightmicroscopy}{\faGitlab~gitUP}, or by request).
+Afterwards procedures for gaussian fit and averaging were done in \faPython Python (script available publicly on \href{https://github.com/howset/LightMicro}{\faGithub~GitHub}, or by request).
 
 %----------------------------------------------------------------------------------------
 %	RESULTS AND DISCUSSION
@@ -113,40 +113,12 @@ Although in principal, it is known that the iterative method should give the bes
 The fast iterative method is basically the same with the limitation on the number of iterations. 
 The inverse filter is a method that involves a Fourier transformation and is the fastest method among these three.
 
-%The discrepancies observed here could probably be contributed to the inoptimally acquired PSF
 
 %--------------------------------
 \subsection{AX2 cells}
 
 The PSF obtained from previous experiment on tetraspeck beads was then used for the deconvolution of AX2 cells images (Fig.~\ref{fig:ax2mon}~(Left), the composite and channel breakdown of raw/input image). 
 The following organelles are labelled: nucleus by DAPI, CP91 (core of centrosome) by anti-rabbit-AlexaFluor568, and CP224 (corona of centrosome) by anti-mouse-AlexaFluor488.
-%Fluorescence label: anti-rabbit-AlexaFluor568 (red color, CP91 core of the centrosome), anti-mouse-AlexaFluor488 (green color, CP224 corona of the centrosome) and DAPI (blue, nucleus) (from expansion protocol).
-
-%\begin{figure}[h!]
-%\centering
-%\captionsetup[subfigure]{position=bottom}
-%	\subfloat[Composite\label{ax2co}]{\includegraphics[width=.23\columnwidth]{Exp_7_Deconvolution/Figures/AX2comp}}\hspace{0.1em}
-%	\subfloat[CP91\label{ax2c1}]{\includegraphics[width=.23\columnwidth]{Exp_7_Deconvolution/Figures/AX2c1}}\hspace{0.1em}
-%%\captionsetup[subfigure]{position=bottom}
-%	\subfloat[CP224\label{ax2c2}]{\includegraphics[width=.23\columnwidth]{Exp_7_Deconvolution/Figures/AX2c2}}	\hspace{0.1em}
-%	\subfloat[Nucleus\label{ax2c3}]{\includegraphics[width=.23\columnwidth]{Exp_7_Deconvolution/Figures/AX2c3_5um}}\\
-%\caption{Raw input composite of AX2 cells and the channel breakdown. Shown here are single representative optical sections of a z-stack. CP91 is labelled by AlexaFluor-568 (red), CP224 by AlexaFluor-488 (green), and the nucleus by DAPI (blue). Objective lens: Plan Apochromat 100$\times$/1.4 Oil Ph3. Scale bar is 5 $\mu$m. Gamma correction of 1.50 was applied on all channels for visualization purposes.}
-%\label{fig:ax2mip}
-%\end{figure}
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=.6\columnwidth]{Exp_7_Deconvolution/Figures/axmontage/axmon_ng}\\
-%\caption{A montage of the resulting deconvolution process. Each image here is taken from a single representative optical section of a z-stack. CP91 is labelled by AlexaFluor-568, CP224 by AlexaFluor-488, and the nucleus by DAPI. Objective lens: Plan Apochromat 100$\times$/1.4 Oil Ph3. Scale bar is 3 $\mu$m. No gamma correction.}
-%\label{fig:ax2mon}
-%\end{figure}
-
-%\begin{figure}
-%\centering
-%%\includegraphics[angle=-90,origin=c,height=0.7\textheight]{Exp_7_Deconvolution/Figures/montagemerged2}\\
-%\caption{Objective lens: Plan Apochromat 100$\times$/1.4 Oil Ph3. \textbf{Left}: Raw input composite of AX2 cells and the channel breakdown. Shown here are single representative optical sections of a z-stack. CP91 is labelled by AlexaFluor-568 (red), CP224 by AlexaFluor-488 (green), and the nucleus by DAPI (blue). Scale bar is 5 $\mu$m. Gamma correction of 1.50 was applied on all channels for visualization purposes. Yellow square marks the cropped area on CP91 and CP224 channel on the right montage, blue square marks the cropped area on the nucleus channel. \textbf{Right}: A montage of the resulting deconvolution process. Each image shown here corresponds to the optical section shown on left image. Scale bar is 3 $\mu$m. No gamma correction.}
-%\label{fig:ax2mon}
-%\end{figure}
 
 \begin{figure}
 \centering
@@ -171,7 +143,6 @@ This feature can also be observed with the fast iterative method using measured 
 The inverse filter method seem to produce a mottling artifact in this channel. 
 A mottling artifact is a phenomenon where signals, particularly noise in the background gets amplified by deconvolution algorithms. 
 This phenomenon occurs usually with inversion algorithms, but iterative algorithms are also not free from this~\cite{DecArtif}. 
-%Hence it is a possibility that the feature shown with both the iterative methods are also actually a mottling artifact, just to a lesser degree. This feature in the fast iterative method is not as prominent, speculatively due to the fact that the iteration in this method is limited so as the noise amplification is not as much as with the iterative method.
 
 Inspecting the DAPI channel, it can be easily seen that the fast iterative method produces a much grainier image in comparison to the iterative method, both for the theoretical and measured PSF. 
 This occurs on both previous channels of this method as well, just more prominently displayed here. 
@@ -188,23 +159,6 @@ If there are aberrations in the image, then the PSF should also contain a corres
 Otherwise, the deconvolved image may contain errors or be poorly restored~\cite{DecArtif}. 
 Managing appropriate settings during image acquisitions also plays a major role.
 
-
-
-%\begin{figure}
-%\begin{centering}
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_input}\\
-%\end{centering}	
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_iterc}
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_itert}\\
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_fastiterc}
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_fastitert}\\
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_invfilc}
-%	\includegraphics[width=.5\columnwidth]{Exp_7_Deconvolution/Figures/axcomposite/g_ax2_invfilt}\\
-%\caption{Top row: input ax2. 2nd row: iter, 3rd row: fast iter, bottom row: inverse filter. Left column: calc, right column: theo. All three channels, no contrast/brightness adjustment, no rgb alignment. Objective lens: Plan Apochromat 100$\times$/1.4 Oil Ph3}
-%\label{fig:ax2}
-%\end{figure}
-
-
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
@@ -215,38 +169,3 @@ Managing appropriate settings during image acquisitions also plays a major role.
 
 %\bibliography{sample.bib} % The file containing the bibliography
 
-%----------------------------------------------------------------------------------------
-
-
-%Notes:\\
-%\begin{itemize}
-%\item Beads are bad so only 3 bead samples instead of the usual 5. Cy5 is excluded because there is no signal of Cy5 (can only get from the theo --> not measured) channel 4 is IR
-%\item To avoid beam shift --> get full z stack per channel --> not changing filter cube carousel during measurement in different channel. --> If there is shift in x-y, then maybe due to changing in the filter carousel (?)
-%\item Use tetraspeck 200nm. Smaller beads may be better, but fluorescence may be weak. Can also be bigger, but not necessarily better. Can be seen from Z stack there is different focus on different channel --> due to chromatic abberration
-%\item Deconv is worse with thicker tissue (if there are lots of out of focus information), more spherical abberration the deeper it gets into the specimen.
-%\item theo is worse than measured in z dimension --> lect optical sectioning 01
-%\item Shift on channels, how to align? --> not necessary, because shift is due to filter carousel
-%\item Task 1: Make pic like Fig.~\ref{fig:beads}
-%\item Task 2: How to get FWHM here? \textcolor{red}{Calculate mean values and standard deviation and finally give an estimation of the achievable resolution according to the Rayleigh criterion.} --> open real file in fiji, make line, get profile, save, then do fwhm by python(?)
-%\item \textcolor{red}{Clear up with Julius: Image just composite only?}
-%\item \textcolor{red}{Clear up with Julius: FWHM Avoid airydiscs, but several z stacks while beads in focus, right?}
-%\item nearest neighbour simple and very fast. reg inv fil is fast and better. fast iterative is good with medium speed. constrained iterative is excellent but slow.
-%\item constrained iterative: The best image quality is achieved using the iterative maximum likelihood algorithm (see Schaefer et al.: "Generalized approach for accelerated maximum likelihood based image restoration applied to three-dimensional fluorescence microscopy", J. of Microscopy, Vol. 204, Pt 2, November 2001, pp. 99ff.). This algorithm is able to calculate light from various focal planes back to its place of origin. Consequently, with this method it is possible to derive the 3D structure from fluorescence images with the correct brightness distribution and to visualize optical sections. It is also possible for missing information to be partially restored from neighboring voxels.
-%The spatial resolution can be increased without artifacts up to a theoretical limit (one voxel). It is essential for Z-stacks to have been acquired in accordance with Nyquist. Acquiring sufficient planes above and below the structure of interest is also imperative for achieving good results. As this is a complex mathematical method, the calculation can take longer, depending on the image size and the PC being used.
-%\item The "Fast Iterative" method is an iterative restoration method that uses only one iteration per convolution step (see Meinel, E. S.: Origins of linear and nonlinear recursive restoration algorithms. J.Opt.Soc.Am, 3 (6), 1986, 787-799). No
-%regularization is used in this case. Due to the fast processing and convergence after just a few iterations, this method is suitable in particular for the processing of larger time lapse images. The results of the method can quickly lead to good results and remove most of the out-of-focus light. They do not, however, create quantitative brightness conditions in the image. If undersampled images are present, artifact formation may also result. Zenblue software guide
-%\item The inverse filter is a genuine 3D method and generally achieves better results than the Nearest Neighbor algorithm. It essentially involves dividing the Fourier transformation ("FT") of the volume by the FT of the PSF, which can be performed very quickly. In the real space this corresponds to deconvolution. In addition, a statistical method ("General Cross Validation – GCV") is applied, which determines the noise component of the image and automatically sets the restoration strength to the optimum level in line with this. This process is also known as regularization.
-%The method is very well suited to the processing of several image stacks in order to preselect images for the application of the iterative "high-end" method. Z-stacks must, however, have been acquired at the correct (Nyquist) distance. The additional acquisition of Z-planes above and below the structure of interest is recommended. idem
-%\item 
-%\end{itemize}
-
-%\begin{figure}
-%\begin{centering}
-%	\includegraphics[width=.45\columnwidth]{Exp_7_Deconvolution/Figures/Plots/fastcalcc1l}\hspace{0.1em}
-%	\includegraphics[width=.45\columnwidth]{Exp_7_Deconvolution/Figures/Plots/fasttheoc1m}\\
-%	\includegraphics[width=.45\columnwidth]{Exp_7_Deconvolution/Figures/Plots/invfilcalcc1r}\hspace{0.1em}
-%	\includegraphics[width=.45\columnwidth]{Exp_7_Deconvolution/Figures/Plots/itercalcc1m}\\
-%\caption{Sample plots. Pick randomly from 84 plots.}
-%\end{centering}
-%\label{fig:samplo}
-%\end{figure}
