@@ -199,14 +199,15 @@ That region is then assigned as pure fluorophore/regarded as reference and can b
 If such region is not found, then the area with the lowest signal intensity in the other channels is assigned to be a reference.
 This is how ACE works and is mathematically based on a Principal Component Analysis (PCA)~\cite{ZeissCamp2}.
 In Fig.~\ref{ES} is the resulting ACE of a lily of the valley specimen. 
-The reference spectra shows that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3, this can indeed be seen by comparing the image acquisition of channel 2 \& 3 (Fig.~\ref{ES}2\&3) that shows the cell walls. 
-Whereas channel 1 shows the recognition of different cellular structure (Fig.~\ref{ES}1), probably the chloroplasts. 
+The reference spectra shows that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3. 
+This can indeed be seen by comparing the image acquisition of channel 2 \& 3 (Fig.~\ref{ES}2\&3) that shows the cell walls (xylems), whereas channel 1 shows the recognition of different bead-like structures (Fig.~\ref{ES}1). 
 Arguably, channel 2 can also be picked in place of channel 3, however the spectrum separation between channel 3 and channel 1 would make it as a better option to be chosen. 
 This is further confirmed by the composites in Fig.~\ref{Co} in which the combination of channel 1-2 and channel 1-3 show a relatively similar structures that can be recognized although channel 1-3 gives a better overall picture. 
 The combination of channel 2-3 brings no information that is not already contained in channel 1-3. 
 The composite of all 3 channels is also presented here as a comparison. 
 
-Another channel produced by this function is the residual channel (not shown) which consist of spectral signals that do not match those in the reference library and hence not assigned, this could be signals that arise from saturated pixels or from high background levels~\cite{ZeissCamp2}. 
+Another channel produced by this function is the residual channel (not shown) which consist of spectral signals that do not match those in the reference library and hence not assigned. 
+This could be signals that arise from saturated pixels or from high background levels~\cite{ZeissCamp2}. 
 Ideally, no signal should be exhibited in this channel. 
 
 Similar result could be achieved by manual selection of regions. 
@@ -282,9 +283,9 @@ Depending on the case, some purpose may require the use of this method. Shadow p
 
 \begin{figure}[h!]
 \centering
-\subfloat[Unadjusted Z-step\label{app}]{\includegraphics[width=.29\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z11}}\hspace{0.1em}
-\subfloat[XY-adjusted Z-step\label{xy}]{\includegraphics[width=.29\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z22a}}\hspace{0.1em}
-\subfloat[Auto-brightness\label{aut}]{\includegraphics[width=.29\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z33_5uma}}\\
+\subfloat[Unadjusted Z-step\label{app}]{\includegraphics[width=.28\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z11}}\hspace{0.1em}
+\subfloat[XY-adjusted Z-step\label{xy}]{\includegraphics[width=.28\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z22a}}\hspace{0.1em}
+\subfloat[Auto-brightness\label{aut}]{\includegraphics[width=.28\columnwidth]{Exp_3_LSM/Figures/MS3/F4_z33_5uma}}\\
 \caption{\textit{Z-section} of the rhizome of a lily of the valley specimen. 
 White star symbols shows the comparison of fluoresence signal strength. 
 Objective lens: Plan Apochromat 63$\times$/1.4 Oil. 
@@ -300,7 +301,7 @@ This can be seen clearly by inspecting Fig.~\ref{xy} and~\ref{aut} along with th
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.8\columnwidth]{Exp_3_LSM/Figures/MS3/F5mg_150um}	
+\includegraphics[width=0.7\columnwidth]{Exp_3_LSM/Figures/MS3/F5mg_150um}	
 \caption{ A large area of a blowfly abdomen (heart) specimen. 
 Green is actin labelled by AlexaFluor 488-Phalloidin, and blue is nucleus labelled by DAPI. 
 Objective lens: Plan Neofluar 20$\times$/0.5. 
@@ -333,7 +334,7 @@ To note, the data for pinhole opening of 3 AU seems to be jeopardized, and hence
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=.9\columnwidth]{Exp_3_LSM/Figures/MS3/F7a}	
+\includegraphics[width=.8\columnwidth]{Exp_3_LSM/Figures/MS3/F7a}	
 \caption{xz-section of a gold-covered coverslip with different pinhole sizes along with the gaussian fit to obtain the FWHM, and the relationship between it and pinhole sizes. 
 Images were acquired with pinhole size 0.3, 0.8, 1, 1.5, 2, and 4 AU (here shown only a selection of those). 
 Objective lens: Plan Apochromat 63$\times$/1.4 Oil. 
