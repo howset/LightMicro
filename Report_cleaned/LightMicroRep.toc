@@ -51,98 +51,98 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}{Multifluorescence, Spectral Analysis, and 3-D Imaging}}{14}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}{Total Internal Reflection Fluorescence Microscopy}}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {4}{Total Internal Reflection Fluorescence Microscopy}}{20}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}{Introduction}}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.1}{Introduction}}{20}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{21}{paragraph*.31}%
+\contentsline {paragraph}{{Aim}}{20}{paragraph*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}{Methods}}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.2}{Methods}}{20}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}{Results and Discussion}}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.3}{Results and Discussion}}{20}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}{Expansion Microscopy}}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {5}{Expansion Microscopy}}{22}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}{Introduction}}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.1}{Introduction}}{22}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{23}{paragraph*.34}%
+\contentsline {paragraph}{{Aim}}{22}{paragraph*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}{Methods}}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.2}{Methods}}{22}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}{Results and Discussion}}{23}{section.5.3}%
+\contentsline {section}{\numberline {5.3}{Results and Discussion}}{22}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}{Airyscan}}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {6}{Airyscan}}{24}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}{Introduction}}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.1}{Introduction}}{24}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{25}{paragraph*.38}%
+\contentsline {paragraph}{{Aim}}{24}{paragraph*.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}{Methods}}{25}{section.6.2}%
+\contentsline {section}{\numberline {6.2}{Methods}}{24}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}{Results and Discussion}}{26}{section.6.3}%
+\contentsline {section}{\numberline {6.3}{Results and Discussion}}{25}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}{Deconvolution}}{28}{chapter.7}%
+\contentsline {chapter}{\numberline {7}{Deconvolution}}{27}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}{Introduction}}{28}{section.7.1}%
+\contentsline {section}{\numberline {7.1}{Introduction}}{27}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{28}{paragraph*.42}%
+\contentsline {paragraph}{{Aim}}{27}{paragraph*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}{Methods}}{28}{section.7.2}%
+\contentsline {section}{\numberline {7.2}{Methods}}{27}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}{Results and Discussion}}{28}{section.7.3}%
+\contentsline {section}{\numberline {7.3}{Results and Discussion}}{27}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}{Tetraspeck beads}}{28}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.1}{Tetraspeck beads}}{27}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}{AX2 cells}}{31}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.2}{AX2 cells}}{30}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}{Ca-Imaging}}{34}{chapter.8}%
+\contentsline {chapter}{\numberline {8}{Ca-Imaging}}{33}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}{Introduction}}{34}{section.8.1}%
+\contentsline {section}{\numberline {8.1}{Introduction}}{33}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{34}{paragraph*.47}%
+\contentsline {paragraph}{{Aim}}{33}{paragraph*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}{Methods}}{35}{section.8.2}%
+\contentsline {section}{\numberline {8.2}{Methods}}{34}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}{Results and Discussion}}{35}{section.8.3}%
+\contentsline {section}{\numberline {8.3}{Results and Discussion}}{34}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}{Fluorescence Correlation Spectroscopy}}{37}{chapter.9}%
+\contentsline {chapter}{\numberline {9}{Fluorescence Correlation Spectroscopy}}{36}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}{Introduction}}{37}{section.9.1}%
+\contentsline {section}{\numberline {9.1}{Introduction}}{36}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{37}{paragraph*.51}%
+\contentsline {paragraph}{{Aim}}{36}{paragraph*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}{Methods}}{37}{section.9.2}%
+\contentsline {section}{\numberline {9.2}{Methods}}{36}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}{Results and Discussion}}{37}{section.9.3}%
+\contentsline {section}{\numberline {9.3}{Results and Discussion}}{36}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3.1}{Rpl3}}{37}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.1}{Rpl3}}{36}{subsection.9.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3.2}{FCS}}{37}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.2}{FCS}}{36}{subsection.9.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Observation Volume}}{38}{paragraph*.52}%
+\contentsline {paragraph}{{Observation Volume}}{37}{paragraph*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Fluorescence Probability}}{38}{paragraph*.54}%
+\contentsline {paragraph}{{Fluorescence Probability}}{37}{paragraph*.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Corrections}}{39}{paragraph*.56}%
+\contentsline {paragraph}{{Corrections}}{38}{paragraph*.54}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{{Concentration}}{38}{paragraph*.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.3}{LSM}}{38}{subsection.9.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{{Calibration}}{38}{paragraph*.56}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{{Concentration}}{39}{paragraph*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3.3}{LSM}}{39}{subsection.9.3.3}%
+\contentsline {paragraph}{{Amount of proteins}}{39}{paragraph*.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Calibration}}{39}{paragraph*.58}%
+\contentsline {chapter}{\numberline {10}{Fluorescence Recovery After Photobleaching}}{46}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Concentration}}{40}{paragraph*.59}%
+\contentsline {section}{\numberline {10.1}{Introduction}}{46}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Amount of proteins}}{40}{paragraph*.60}%
+\contentsline {paragraph}{{Aim}}{46}{paragraph*.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}{Fluorescence Recovery After Photobleaching}}{47}{chapter.10}%
+\contentsline {section}{\numberline {10.2}{Methods}}{46}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}{Introduction}}{47}{section.10.1}%
+\contentsline {section}{\numberline {10.3}{Results and Discussion}}{47}{section.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{47}{paragraph*.65}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}{Methods}}{47}{section.10.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}{Results and Discussion}}{48}{section.10.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{51}{figure.caption.66}%
+\contentsline {chapter}{References}{50}{figure.caption.64}%

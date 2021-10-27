@@ -15,7 +15,7 @@
 \paragraph{Aim} To obtain/restore high resolution images using deconvolution methods. 
 \\
 
-High resolution microscopy is often plagued by blurriness due diffractions (convolution). 
+High resolution microscopy is often plagued by blurriness due to diffractions (convolution). 
 Inverse convolution (deconvolution) methods can be performed to obtain convolution-free images by describing a mathematical function called the Point Spread Function (PSF) to recalculate diffracted light, stray light, and out-of-focus light back to its origin~\cite{Lect10}.  
 
 %----------------------------------------------------------------------------------------
@@ -51,32 +51,31 @@ Afterwards procedures for gaussian fit and averaging were done in \faPython Pyth
 \end{figure}
 
 
-The 200 nm Tetraspeck beads emit at 4 different wavelengths: 430 nm (blue), 515 nm (green), 580 nm (orange) and 680 nm (dark red)~\cite{Tetra}, these correspond to Ch3, Ch2, Ch1, and Ch4 in the case of this experiment. 
+The 200 nm Tetraspeck beads emit at four different wavelengths: 430 nm (blue), 515 nm (green), 580 nm (orange) and 680 nm (dark red)~\cite{Tetra}, these correspond to Ch3, Ch2, Ch1, and Ch4 in the case of this experiment. 
 The beads were imaged as depicted in Fig.~\ref{fig:beads}. During the experiment, only three good beads that could be found. 
 From the raw (input) image, a PSF was calculated (measured PSF). 
 The PSF obtained in this way was then used for deconvolution purposes. Another PSF was calculated (theoretically) from various imaging parameters/device parameters and also used for deconvolution procedures (theoretical PSF) as a comparison. 
 
 At first glance, it can be observed the various deconvolution methods (iterative, fast iterative, and inverse filter) performed differently, especially in the z-dimension. 
 It can also be noticed that there is a different focus of the different channels, most prominently seen, again, in the z-dimension. 
-This could be caused by chromatic abberations. 
+The shift could be caused by chromatic abberations. 
 This shift in focus that can be seen on all images could also be caused by movement of the filter carousel when changing measurement channel during imaging that does not retain the same original focus. 
 Another immediate observation shows that the green channel exhibit a relatively rough background noise which is typical (not shown).
 
 Comparing the measured deconvolutions and the theoretical ones, it is immediately obvious that the resolution in the z-dimension of the measured is better than the theoretical. 
-Calculating the FWHM of each deconvolution methods would give a better overview of the performance of the deconvolution methods in the xy-dimension. 
-This is done by taking a line profile (intensity profile) of all acquired beads on all channels, then make a gaussian fit of the intensity profile and calculate the FWHM of each bead on each channel. 
-Lastly, average the obtained FWHM (of the three beads) for each channel. 
+Calculating the FWHM of each deconvolution methods would give a better overview of their performance in the xy-dimension. 
+This is done by taking a line profile (intensity profile) of all acquired beads on all channels, then make a gaussian fit of the intensity profile and calculate the average FWHM.
 In principal, the resolution in z-dimension can also be obtained in a similar way, however the difference would seem that in this dimension, the object would be in a different shape (more elongated), and also consequently the intensity profile should be taken along the z-axis.
 
 The gaussian fits were first performed using an offset parameter due to the presence of measurements that seems to be off the baseline (channel 2 of the input image). 
 However this seems to set the gaussian fit to fail on some other measurements. 
-Adjusting the initial guess of this parameter (and also the others: A, $\mu$, and $\sigma$) seem to remedy the failure on these measurements, however it would then arbitrarily cause failure on completely different measurements. 
+Adjusting the initial guess of this parameter (and also the others: A, $\mu$, and $\sigma$) seems to remedy the failure on these measurements, however it would then arbitrarily cause failure on completely different measurements. 
 Since no pattern or explanation could be obtained, it was then decided to make a baseline correction to the initially problematic measurements, namely channel 2 of the input image by substracting the intensity values with the minimum value which provides the baseline of around 0, putting them on the same baseline level as the other measurements. 
 This allows for the removal of the offset term of the fit and resulted in the successful application of the whole fitting procedure. 
 It is probably also worth mentioning that no intensity normalization was conducted due to the fact that the fit at this point seems fine already.
 
 The result of this is given in Tab.~\ref{tab:avfwhm} and visualized in a barplot in Fig.~\ref{fig:avfwhmbar}. 
-It can be seen here, that the FWHM of the input image is naturally the largest, due to the fact that no deconvolution procedures was performed. 
+It can be seen here, that the FWHM of the input image is naturally the largest, due to the fact that no deconvolution procedure was performed. 
 The FWHM of the input image is around 30\% larger than the actual size of the beads (200 nm), and all attempts of the deconvolution procedures managed to bring the FWHM lower. 
 It can be concluded that all methods using measured PSF consistently performs better on all channels than methods using theoretical PSF except in the case of measurement of fast iterative method on channel 4 where the values are really close. 
 And among the three deconvolution methods, fast iterative constantly yields the smallest FWHM on all channels.
@@ -106,7 +105,7 @@ And among the three deconvolution methods, fast iterative constantly yields the 
 \label{fig:avfwhmbar}
 \end{figure}
 
-The optical resolution following the Rayleigh criterion, given by $d=0.61\times(\lambda/NA)$, where $d$ is minimum distance where two points are resolved, $\lambda$ is the wavelength of illumination, and $NA$ is the numerical aperture of the lense, yield for each channel 1-4 (i.e. red/orange, green, blue, and dark red/infrared): 252.71 nm, 224.39 nm, 187.35 nm, and 296.28 nm respectively. 
+The optical resolution following the Rayleigh criterion, given by $d=0.61\times(\lambda/NA)$, where $d$ is the minimum distance where two points are resolved, $\lambda$ is the wavelength of illumination, and $NA$ is the numerical aperture of the lense, yield for each channel 1-4 (i.e. red/orange, green, blue, and dark red/infrared): 252.71 nm, 224.39 nm, 187.35 nm, and 296.28 nm respectively. 
 Given that the minimum distance for two points to be considered resolved is where the maximum of one point is directly on the first minimum of the other peak ($\approx$ FWHM), it seems that at least in the xy-dimension, the calculated FWHM of all deconvolution methods at all considered channels does not correspond all that well with the Rayleigh criterion.
  
 Although in principal, it is known that the iterative method should give the best resulting image quality because of its ability to calculate light from various focal planes back to its place of origin, with the disadvantage being that it may take a long time for this deconvolution method to be performed due to the number of iterations in performing deconvolution algorithm (40 in this case). 
@@ -117,7 +116,7 @@ The inverse filter is a method that involves a Fourier transformation and is the
 %--------------------------------
 \subsection{AX2 cells}
 
-The PSF obtained from previous experiment on tetraspeck beads was then used for the deconvolution of AX2 cells images (Fig.~\ref{fig:ax2mon}~(Left), the composite and channel breakdown of raw/input image). 
+The PSF obtained from previous experiment on tetraspeck beads was then used for the deconvolution of AX2 cells images. Shown in Fig.~\ref{fig:ax2mon}~(Left). 
 The following organelles are labelled: nucleus by DAPI, CP91 (core of centrosome) by anti-rabbit-AlexaFluor568, and CP224 (corona of centrosome) by anti-mouse-AlexaFluor488.
 
 \begin{figure}
@@ -134,7 +133,7 @@ Scale bar is 3 $\mu$m.}
 \end{figure}
 
 A montage image of each organelle according to the deconvolution methods is shown in Fig.~\ref{fig:ax2mon}~(Right). 
-Here it can be seen that most deconvolution methods bring better image results in comparison to the raw/input image where contrasts are improved and structures are more readily recognizable. 
+It can be seen that most deconvolution methods bring better image results in comparison to the raw/input image where contrasts are improved and structures are more readily recognizable. 
 The size of CP91 is shown to be the smallest for the fast iterative method in comparison to other methods. 
 This is consistent with the result from the discussion above where this deconvolution method yields the smallest FWHM. 
 
@@ -150,11 +149,11 @@ This can be attributed to the limited number of iterations used in this method i
 The resulting images from the inverse filter method show, again, an artifact, which is arguably a ringing artifact. This artifact has an appearance of dark ripples around bright features of an image~\cite{DecArtif}.  
 
 As a comparison, another set of images were also acquired for the iterative method using measured PSF, however this time using background correction. 
-This acquisition shows a better form of the nucleus in the DAPI channel but does not seem to inroduce major improvements for the other two channels in this observation. 
+This acquisition shows a better form of the nucleus in the DAPI channel but does not seem to introduce major improvements for the other two channels in this observation. 
 Another voluntary acquisition was also conducted for the inverse filter method using measured PSF. 
 This time the artifacts appear less prominent and the images look more appropriate.
 
-For the most part, the ability of the methods employed to restore images has a lot to do with the PSF itself and the raw image being restored, in terms that the PSF that is used should match the corresponding image. 
+For the most part, the ability of the methods employed to restore images has a lot to do with the PSF itself and the raw image being restored, in regards that the PSF that is used should match the corresponding image. 
 If there are aberrations in the image, then the PSF should also contain a corresponding aberrations as well. 
 Otherwise, the deconvolved image may contain errors or be poorly restored~\cite{DecArtif}. 
 Managing appropriate settings during image acquisitions also plays a major role.

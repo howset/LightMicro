@@ -60,10 +60,10 @@ Red asterisk shows the disappearance of the small structure.}
 \label{fig:LSMmerged}
 \end{figure}
 
-To compare how different scanning speed may have influence on imaging, imaging was done using different scanning speeds. 
+To compare how different scanning speed may have influence on imaging, acquisition was done using different scanning speeds. 
 Fig.~\ref{fig:LSMmerged}B-D shows the effect of scanning speed of Lily of the valley specimen (Fig.~\ref{fig:LSMmerged}A). 
 As can be seen, slower scanning speed allows for a higher resolution image and increasing the scanning speed reduces the resolution of an image and makes the zoomed-in image heavily pixelated, however this also makes the imaging process faster. 
-A slower scanning speed could be advantageous in yielding a higher resolution image, however this increases the time necessary to conduct the imaging and also the risk of photobleaching the specimen. 
+A slower scanning speed could be advantageous in yielding a higher resolution image, however this increases the time required to conduct the imaging and also the risk of photobleaching the specimen. 
 
 The pinhole is a hallmark of a confocal microscopy system, it allows for the removal of emissions that do not come from the focal plane. 
 The size of the pinhole generally should be exactly the size of the Airy disc \cite{LeicaMicro}, given in Airy Units (AU). 
@@ -161,7 +161,7 @@ This is confirmed by removing the excitation on 405 nm (Fig.~\ref{no405}) where 
 Some strategies can be employed in approaching such a problem, namely by means of mathematical approach that involves applying algorithms termed \textit{channel unmixing} \cite{NikonMicro}\cite{Lect11}. 
 This method does not really work because the algorithm functions on where the intensity is the highest, and in this case, it is on where the nucleus is, therefore it is necessary to decrease DAPI excitation. 
 The result can be seen in Fig.~\ref{unmix} where the bleed-through is significantly reduced although some traces can still be recognized along with some dark spots that seems to trace the mitotracker signal. 
-Another approach is by using multitracking option to enable fast switching between laser lines using an acousto-optic tunable filter (AOTF) to separate excitation (and the subsequent gathering of fluorescence emission) of each fluorophore \cite{ZeissCamp3}. 
+Another approach is by using multitracking option to enable fast switching between laser lines using an Acousto-Optic Tunable Filter (AOTF) to separate excitation (and the subsequent gathering of fluorescence emission) of each fluorophore \cite{ZeissCamp3}. 
 The result in Fig.~\ref{multt} shows no bleed-through that can be observed.
 
 \begin{figure}[h!]
@@ -183,13 +183,13 @@ Scalebar is 10 $\mu$m.}
 
 \begin{figure}[h!]
 \centering
-\subfloat[Channels \& Emission Spectra\label{ES}]{\includegraphics[width=.5\columnwidth]{Exp_3_LSM/Figures/MS3/F2_grey1}}\hfill
-\subfloat[Composites\label{Co}]{\includegraphics[width=.5\columnwidth]{Exp_3_LSM/Figures/MS3/F2_grey2}}\\
-\caption{\textbf{A} (top) is the emission spectra of the individual channels (A~1-3) taken by ACE of the rhizome of a lily of the valley specimen. 
-\textbf{B} shows the composites of the combinations of channels, shown here in grey scale for easier comparison. 
+\includegraphics[width=\columnwidth]{Exp_3_LSM/Figures/MS3/ACEolfp}\\
+\caption{\textbf{Top}: Composite result of ACE with the channel breakdown on the right of it (channel 4 is the residual channel).
+The fluorescence spectra of channel 1-3 is shown on the far right.  
+\textbf{Bottom}: Composite result of online fingerprinting by manual selection of reference spectra on sample. On the right of it are images of the channel breakdown. 
 Objective lens: Plan Neofluar 20$\times$/0.5. 
-Scalebar is 25 $\mu$m.}
-\label{fig:autace}
+Scalebars are 30 $\mu$m.}
+\label{fig:aceolfp}
 \end{figure}
 
 A linear unmixing method that can be employed to separate fluorescence signals that are close to one another is the Automatic Component Extraction (ACE) in which a Lambda stack is acquired. 
@@ -197,50 +197,28 @@ The Lambda stack is a collection of whole images taken with incrementing wavelen
 Usually, spectral information are directly searched from the Lambda stack by inspecting all channels for regions within where no signal is detected in the other channels. 
 That region is then assigned as pure fluorophore/regarded as reference and can be used for the unmixing operation. 
 If such region is not found, then the area with the lowest signal intensity in the other channels is assigned to be a reference.
-This is how ACE works and is mathematically based on a Principal Component Analysis (PCA)~\cite{ZeissCamp2}.
-In Fig.~\ref{ES} is the resulting ACE of a lily of the valley specimen. 
-The reference spectra shows that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3. 
-This can indeed be seen by comparing the image acquisition of channel 2 \& 3 (Fig.~\ref{ES}2\&3) that shows the cell walls (xylems), whereas channel 1 shows the recognition of different bead-like structures (Fig.~\ref{ES}1), probably glucose stored as starch in the form of intracellular granules. 
-Arguably, channel 2 can also be picked in place of channel 3, however the spectrum separation between channel 3 and channel 1 would make it as a better option to be chosen. 
-This is further confirmed by the composites in Fig.~\ref{Co} in which the combination of channel 1-2 and channel 1-3 show a relatively similar structures that can be recognized although channel 1-3 gives a better overall picture. 
-The combination of channel 2-3 brings no information that is not already contained in channel 1-3. 
-The composite of all 3 channels is also presented here as a comparison. 
+This is how ACE works and is mathematically based on Principal Component Analysis (PCA)~\cite{ZeissCamp2}.
+In Fig.~\ref{fig:aceolfp}-Top is shown the resulting ACE of a lily of the valley specimen.
+Simply inspecting the composite image, it can be seen that the image is dominated by channel 3 and 1. 
+Comparing channel 2 and 3 suggests that channel 2 is very similar to channel 3 and most likely does not carry significant information not contained in channel 3. 
+This can indeed be seen by inspecting the fluorescence spectra where the spectra of channel 2 and 3 lie close together.
 
-Another channel produced by this function is the residual channel (not shown) which consist of spectral signals that do not match those in the reference library and hence not assigned. 
+Another channel produced by this function is the residual channel (channel 4) which consist of spectral signals that do not match those in the reference library and hence not assigned. 
 This could be signals that arise from saturated pixels or from high background levels~\cite{ZeissCamp2}. 
-Ideally, no signal should be exhibited in this channel. 
+Ideally, no signal should be exhibited in this channel. Signals shown in this channel indicates the quality of the ACE process.
 
-Similar result could be achieved by manual selection of regions. 
-This is shown in Fig.~\ref{fig:manlinun}. Here two channels (Ch. 11 and 15) out of 32 from the Lambda stack were chosen corresponding to the recorded fluorescence signal at 518 and 557 nm. 
-It can be seen that the composite of both these channels already gives a complete picture of the sample when compared to the maximum intensity projection of the acquired lambda stack. 
-However, manual selection is very tedious to do. 
+Instead of producing the reference spectra automatically, it can also done by manually selecting regions in a sample to be designated as a reference. 
+This of course depends a lot on the sample itself, whether it contains regions that exhibit pure fluorescence or not and also the individual eye of the operator. 
+In Fig.~\ref{fig:aceolfp}-Bottom is shown result of the online fingerprinting function that acquired the image by using the reference spectra that are manually selected. This function does not require the recording of a lambda stack to be performed prior to acquisition, but necessitates the reference spectra that can either be manually selected of recorded separately.
+It can be seen here that channel 1 of the manual selection managed to isolate the information of the bead-like structures in comparison to the channel 1 of ACE that includes information regarding the cell walls as well. 
+This bead-like structures could be nutrients/glucose stored as starch in the form of intracellular granules. 
+The comparison of channel 2 and 3 of manual selection seem to carry similar information of the cell walls, but differs rather strikingly in regards of the granules. 
+This can probably be explained by the fact that autofluorescent samples do not exhibit a well defined fluorescent signal/peaks. 
 
-\begin{figure}[h!]
-\centering
-\captionsetup[subfigure]{position=bottom}
-\subfloat[Ch. 11 \& 15\label{manc}]{\includegraphics[width=.45\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mipc1115r}}\hspace{0.1mm}
-\subfloat[Lambda stack\label{manm}]{\includegraphics[width=.45\columnwidth]{Exp_3_LSM/Figures/MS3/F2_mipcompr3_50um}}\\
-\caption{Manual selection from the Lambda stack. 
-Shown here are the maximum intensity projections of: \textbf{A} only Ch. 11 and 15 and \textbf{B} the whole Lambda stack. 
-Shown with exaggerated brightness for clarity.  
-Objective lens: Plan Neofluar 20$\times$/0.5. 
-Scalebar is 50 $\mu$m.} 
-\label{fig:manlinun}
-\end{figure}
+In principal, a sample that contains regions with well defined fluorescent signal can be easily worked with either manually or automatically, with the advantage that automatic procedures saves time and effort. 
+But whenever this is not possible, or the resulting component extraction does not seem to be optimal, a manual selection may be warranted, although not without its own pitfalls. 
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=.5\columnwidth]{Exp_3_LSM/Figures/MS3/F2_olfp5_50um}
-\caption{Result of using the online fingerprinting function. 
-Inset shown with readjusted brightness and constrast. 
-Objective lens: Plan Neofluar 20$\times$/0.5. 
-Scalebar is 50 $\mu$m.}
-\label{fig:olfp}
-\end{figure}
-
-The function online fingerprinting was used utilizing the previously acquired result/reference spectra from linear unmixing methods to produce an image shown in Fig.~\ref{fig:olfp}. 
-Using this function, the process of separating fluorescence spectral overlap was done during image acquisition. 
-In this case, however, it would seem that actually three channels could be appropriate to obtain a complete image as indicated by the inset where a complete image information would not be obtained had one channel be omitted.
+Another option would be to obtain reference from another sample that contains a well defined signal and save the spectra as a standard reference. However care must be taken that measurement conditions of the reference sample is identical to the measurement conditions of the investigated sample. 
 
 \begin{figure}[h!]
 \centering
@@ -254,7 +232,6 @@ Scalebar is 10 $\mu$m.}
 \end{figure}
 
 The phenomenon of autofluorescence can be exhibited by a variety of organisms. 
-A sample taken from a pond consisting of algae and diatoms shows this behaviour. 
 Shown in Fig.~\ref{fig:diatalg} is the autofluorescence of a live sample of algae and diatomes taken from the pond. 
 It can be seen here that there are algae that have similar fluorescence spectrum with diatoms and other algae that do not.
 
@@ -297,7 +274,7 @@ A z-section made by the previous image acquisition is shown in Fig.~\ref{app}.
 This presentation shows a rather compressed z-section. 
 Applying corrections by adapting the z-step length to the pixel size in x-y, Fig.~\ref{xy} is obtained which shows a more appropriate dimension, although it is apparent that the top part of the specimen receives more excitation and exhibits a stronger fluorescence response. 
 Adjusting auto z-brightness correction (Fig.~\ref{aut}) allows for a more evenly distributed signal to deal with the fact that fluorescence response gets weaker the deeper a layer is located. 
-This can be seen clearly by inspecting Fig.~\ref{xy} and~\ref{aut} together with the white star symbols as a comparison. It can be seen that without the auto-brightness adjustment, the top part of the image exhibit more fluorescence signal than the part below it. With the auto-brightness adjustment, the bottom part of the image exhibit a more balanced signal relatively to the part above it.
+This can be seen clearly by inspecting Fig.~\ref{xy} and~\ref{aut} together with the white star symbols as a comparison. It can be seen that without the auto-brightness adjustment, the top part of the image exhibit more fluorescence signal than the part below it. With the auto-brightness adjustment, the bottom part of the image shows a relatively more balanced signal.
 
 \begin{figure}[h!]
 \centering
@@ -309,7 +286,7 @@ Scalebar is 150 $\mu$m.}
 \label{fig:bloabdo}
 \end{figure}
 
-Sometimes, the area one would like to image is larger than the scan area offered by the device. 
+Sometimes, the area one would like to capture is larger than the scan area offered by the device. 
 The option \textit{Tile Scan} allows for imaging a large area of a specimen by moving the scan area and stitch them together automatically. 
 The acquired large-area image of a blowfly abdomen (heart) is shown in Fig.~\ref{fig:bloabdo}.
 
@@ -329,7 +306,7 @@ Fig.~\ref{fig:what} shows a 3-D perspective of a z-stack image acquisition of a 
 
 The pinhole size of a confocal microscopy affects not only in the xy-dimension, but also the resolution in the z-dimension, as can be seen in Fig.~\ref{fig:goldpin} that shows xz-section of a gold-covered coverslip, where the smaller pinhole size gives a better resolved image. 
 This is confirmed as well by the calculation of the FWHM of the acquisitions where the FWHM increases along with the increasing pinhole opening size. 
-The FWHM calculation was done by a gaussian fit to the intensity-distance data of the acquisitions of each pinhole size with neither intensity normalization nor baseline corrections. 
+The FWHM calculation was done by a gaussian fit to the intensity-distance data of the acquisitions of each pinhole size with neither intensity normalization nor baseline correction. 
 To note, the data for pinhole opening of 3 AU seems to be jeopardized, and hence excluded from calculation. 
 
 \begin{figure}[h!]
@@ -352,4 +329,6 @@ Scalebar is 3 $\mu$m.}
 %\bibliographystyle{unsrt}
 
 %\bibliography{sample.bib} % The file containing the bibliography
+
+
 
