@@ -26,7 +26,7 @@ lm_eq <- function(df){
 
 ggplot(egfp) + 
     geom_point(aes(x1,y1), colour='#7fcdbb') + geom_smooth(aes(x=x1,y=y1,colour='in vitro'), method=lm, se=FALSE) +
-    geom_point(aes(x2,y2), colour='#1d91c0') + geom_smooth(aes(x=x2,y=y2,colour='in vivo'), method=lm, se=FALSE) +
+    geom_point(aes(x2,y2), colour='#1d91c0') + geom_smooth(aes(x=x2,y=y2,colour='in vivo'), method=lm, se=FALSE, linetype = 'dashed') +
     annotate('text', x = 270, y = -10, label = lm_eq(egfpsol), parse = TRUE) +
     annotate('text', x = 1300, y = 600, label = lm_eq(egfp1), parse = TRUE) +
     scale_color_manual(name = "Series",             
