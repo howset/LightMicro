@@ -203,7 +203,7 @@ Both linear fits are set at 0 intercept.}
 \end{figure}
 
 As can be seen from both of these calibration plots, the slopes yielded by both methods (\textit{in vitro} and \textit{in vivo}) are rather similar even though the calibration of the monomeric EGFP in solutions was done without using information from LSM acquisitions (slope~$\texttildelow 0.6$). 
-This indicates initially that the slope obtained from both of this methods can be used in the determination of the amount or concentration of the POI. However, values of $B$ are in a whole different magnitude (median \textit{in vitro}: 4.70371, \textit{in vivo}: 0.00335), where the brightness of EGFP in solution is higher than in cells/yeast. 
+This indicates initially that the slope obtained from both of this methods can be used in the determination of the amount or concentration of the POI. However, values of $B$ are in a whole different magnitude (median \textit{in vitro}: 4.70371, \textit{in vivo}: 0.00335), where the brightness of EGFP in solution is higher than in cells/yeast (because the absolute intensity is ). 
 This means that the information obtained from the \textit{in vitro} measurements may not be necessarily utilizable especially when it concerns to calculating the $p_{f}$ where the value of brightness matters a lot.
 
 Following Eq.~\ref{eqn:pf}, the resulting fluorescence probability is 0.46. As mentioned, this value is used to correct the amount of calculated ribosome and is especially important to consider, because without it the resulting amount would be underestimated.
@@ -212,8 +212,8 @@ Following Eq.~\ref{eqn:pf}, the resulting fluorescence probability is 0.46. As m
 \centering
 \subfloat[N$_{\text{ribosome}}$ vs Volume\label{nv}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/NvsVol_motbud}}\hfill
 \subfloat[Density vs Volume\label{vdd}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/DvsV_wholecell}}
-\caption{\textbf{A}: correlation plot of N$_{\text{ribosome}}$ against volume of mother and bud cells. 
-\textbf{B}: plot of density against volume of whole cells (mothers+buds). 
+\caption{\textbf{A}: correlation plot of N$_{\text{ribosome}}$ against volume of individual mother and bud cells. 
+\textbf{B}: plot of density against volume of whole cells (sum of mother + bud cells). 
 Red dashed lines in \textbf{B} are only for illustrative purposes. }
 \label{fig:corplot}
 \end{figure}
@@ -223,34 +223,25 @@ Which means that the N$_{\text{ribosome}}$ is not a constant value as previously
 This means that considering cells have different sizes, the number of ribosomes can not be used to indicate a cells state in the progression as demonstrated by the fact that a higher amount of N$_{\text{ribosome}}$ corresponds to larger cells (constant density). 
 This is shown in Fig.~\ref{vdd} where the density varies rather constantly within the band as indicated by the (arbitrary) dashed line.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\columnwidth]{Exp_9_FCS/Figures/box_d_all}
+\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cells in the G2, late S, and mitosis indicates the total density of mother and bud cells in these phases.}
+\label{fig:bplot}
+\end{figure}
+
 The inability of this to distinguish cell morphology during cell cycle progression, or rather the constant value of density, is visualized by the boxplot in Fig.~\ref{fig:bplot} which shows that the density does not exhibit any meaningful change during the course of the cell cycle. 
 The statistical test of which is supplied at the end of this chapter. In this case the late S phase is excluded from analysis due to insufficient amount of observation. 
-The analysis by ANOVA for three cell cycle phase indicates no significant difference, hence not carried on further to test the individual differences by pairwise t-tests.
+The analysis by ANOVA for three cell cycle phases indicates no significant difference, hence not carried on further to test the individual differences by pairwise t-tests.
 
 On the single cell level, however, discrimination between mother and bud cells is possible to be done with this technique by using the density as a measure. 
 Separating the data shows that buds constantly exhibit a lower density in comparison to mother cells during the cycle from G2 up to mitosis (Fig.\ref{fig:bplot}). 
 Evidence to this is further supported by statistical tests that found significant difference (by ANOVA for two groups: buds and mothers) between the density of buds and mother cells across the whole cell cycle progression (also supplied at the end of this chapter). 
+Since only two groups was tested, no pairwise t-test was necessary.
 
 Additional analysis was also done on the subset of buds. 
-From the acquired data of this experiment, providing that the S is removed due to only having one observation, it seems that even buds can be distinguished by the density according to which cell cycle phase they are currently in. 
-The evidence is again supplied by the end of this chapter where ANOVA is carried on for two groups of cell cycle phase (G2 and mitosis) with resulting significant difference.
-Since only two groups was tested, no pairwise t-test was conducted.
-
-
-%\begin{figure}[h!]
-%\centering
-%\subfloat[\label{bwc}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_wholecell}}\hfil
-%\subfloat[\label{bmb}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_motherbud}}
-%\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cell = mother + bud.}
-%\label{fig:bplot}
-%\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\columnwidth]{Exp_9_FCS/Figures/box_d_all}
-\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cells in the G2, late S, and mitosis indicates the total density of mother and bud cells in these phases.}
-\label{fig:bplot}
-\end{figure}
+From the acquired data of this experiment, providing that singular observation is removed, it seems that even buds can be distinguished by the density according to which cell cycle phase they are currently in. 
+The evidence is again supplied by the end of this chapter where ANOVA was carried on for two groups of cell cycle phase (G2 and mitosis) with result showing significant difference.
 
 
 

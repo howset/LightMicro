@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  27 OCT 2021 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  27 OCT 2021 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2809,19 +2809,15 @@ ne 214.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [41 <./Exp_9_FCS/Figures/Calplot.png (PNG copy)>]
-<Exp_9_FCS/Figures/box_d_all.png, id=970, 509.65407pt x 338.01282pt>
+<Exp_9_FCS/Figures/box_d_all.png, id=968, 509.65407pt x 338.01282pt>
 File: Exp_9_FCS/Figures/box_d_all.png Graphic file (type png)
 <use Exp_9_FCS/Figures/box_d_all.png>
-Package pdftex.def Info: Exp_9_FCS/Figures/box_d_all.png  used on input line 25
-0.
-(pdftex.def)             Requested size: 328.00125pt x 217.54466pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [42 <./Exp_9_FCS/Figures/NvsVol_motbud.png (PNG copy)> <./Exp_9_FCS/Figures/D
-vsV_wholecell.png (PNG copy)>] [43 <./Exp_9_FCS/Figures/box_d_all.png (PNG copy
-)>]
+Package pdftex.def Info: Exp_9_FCS/Figures/box_d_all.png  used on input line 22
+8.
+(pdftex.def)             Requested size: 368.9975pt x 244.73581pt.
+ [42 <./Exp_9_FCS/Figures/NvsVol_motbud.png (PNG copy)> <./Exp_9_FCS/Figures/Dv
+sV_wholecell.png (PNG copy)> <./Exp_9_FCS/Figures/box_d_all.png (PNG copy)>]) [
+43]
 <Exp_9_FCS/Res/TR_wc.pdf, id=984, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_wc.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_wc.pdf>
@@ -2931,11 +2927,11 @@ File: Exp_9_FCS/Res/TR_bu.pdf Graphic file (type pdf)
 Package pdftex.def Info: Exp_9_FCS/Res/TR_bu.pdf , page1 used on input line 94.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-[46 <./Exp_9_FCS/Res/TR_bu.pdf>]
+ [46 <./Exp_9_FCS/Res/TR_bu.pdf>]
 \openout2 = `Exp_10_FRAP/FRAP.aux'.
 
- (./Exp_10_FRAP/FRAP.tex
+
+(./Exp_10_FRAP/FRAP.tex
 Chapter 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
@@ -3037,10 +3033,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `LightMicroRep.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'LightMicroRep.run.xml'.
 \openout1 = `LightMicroRep.run.xml'.
 
@@ -3049,7 +3041,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
 Here is how much of TeX's memory you used:
  33310 strings out of 483016
  663179 string characters out of 5961286
- 1566207 words of memory out of 5000000
+ 1566232 words of memory out of 5000000
  47127 multiletter control sequences out of 15000+600000
  670897 words of font info for 213 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -3080,7 +3072,7 @@ xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on LightMicroRep.pdf (54 pages, 18128424 bytes).
+Output written on LightMicroRep.pdf (54 pages, 18128515 bytes).
 PDF statistics:
  1355 PDF objects out of 1440 (max. 8388607)
  1047 compressed objects within 11 object streams
