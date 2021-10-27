@@ -5,30 +5,17 @@ library(ggplot2)
 library(dplyr)
 
 ###############################################################################
-# Calibration EGFP in vitro
+# Calibration EGFP in vitro and in vivo
 egfpsol <- read.csv('Data/egfpsol.csv', header = TRUE)
 colnames(egfpsol) <- c('x','y')
-lm_eq <- function(df){
-    m <- lm(y ~ 0+x, df); #intercept at 0,0
-    eq <- substitute(italic(y) ==  b ~italic(x)*','~~italic(R)^2~'='~r2,
-                     list(b = format(unname(coef(m)[1]), digits = 3),
-                          r2 = format(summary(m)$r.squared, digits = 3)))
-    as.character(as.expression(eq));
-}
-fluoplot <- ggplot(data = egfpsol, mapping = aes(x = x, y = y)) +
-    geom_point(shape=1,color='#5e81ac') +
-    geom_smooth(method = 'lm', data = egfpsol, se=FALSE,color='#bf616a') # to add trendline
-f <- fluoplot + 
-    annotate('text', x = 250, y = 300, label = lm_eq(egfpsol), parse = TRUE) + #to show equation
-    labs(title = 'monomeric EGFP in Solution',
-         x = 'Image intensity (kHz)',
-         y = 'Concentration (nM)') 
-print(f)
-
-###############################################################################
-# Calibration EGFP in vivo
 egfp1 <- read.csv('Data/egfp1.csv', header = TRUE)
 colnames(egfp1) <- c('x','y')
+
+egfp <- data.frame(x1 = egfpsol$x,
+                   y1 = egfpsol$y,
+                   x2 = egfp1$x,
+                   y2 = egfp1$y)
+
 lm_eq <- function(df){
     m <- lm(y ~ 0+x, df); #intercept at 0,0
     eq <- substitute(italic(y) ==  b ~italic(x)*','~~italic(R)^2~'='~r2,
@@ -36,15 +23,16 @@ lm_eq <- function(df){
                           r2 = format(summary(m)$r.squared, digits = 3)))
     as.character(as.expression(eq));
 }
-fluoplot <- ggplot(data = egfp1, mapping = aes(x = x, y = y)) +
-    geom_point(shape=1,color='#5e81ac') +
-    geom_smooth(method = 'lm', data = egfp1, se=FALSE,color='#bf616a') # to add trendline
-f <- fluoplot + 
-    annotate('text', x = 680, y = 750, label = lm_eq(egfp1), parse = TRUE) + #to show equation
-    labs(title = 'monomeric EGFP in yeast',
-         x = 'Image intensity (kHz)',
-         y = 'Concentration (nM)') 
-print(f)
+
+ggplot(egfp) + 
+    geom_point(aes(x1,y1), colour='#7fcdbb') + geom_smooth(aes(x=x1,y=y1,colour='in vitro'), method=lm, se=FALSE) +
+    geom_point(aes(x2,y2), colour='#1d91c0') + geom_smooth(aes(x=x2,y=y2,colour='in vivo'), method=lm, se=FALSE) +
+    annotate('text', x = 270, y = -10, label = lm_eq(egfpsol), parse = TRUE) +
+    annotate('text', x = 1300, y = 600, label = lm_eq(egfp1), parse = TRUE) +
+    scale_color_manual(name = "Series",             
+                       values = c('in vitro' = '#7fcdbb',  
+                                  'in vivo' = '#1d91c0')) +
+    labs(x = 'Image intensity (kHz)', y = 'Concentration (nM)')
 
 ###############################################################################
 # Plot yeast N_corrected against Volume with reg_line and correlation
@@ -128,6 +116,25 @@ colnames(rpl) <- c('CellCyclePhase', 'Morphology','Density') #Rename cols for be
 ylgnbl <- c(#'#c7e9b4',
     '#41b6c4',
     '#253494')
+rpl$Morphology<-factor(rpl$Morphology) #Set this column as factor
+rpl$CellCyclePhase<-factor(rpl$CellCyclePhase)
+bp <- ggplot(rpl, aes(CellCyclePhase, Density, colour=Morphology,fill=Morphology)) +
+    geom_boxplot(outlier.shape = 21,alpha=0.6)+
+    ylab(~'Density' (N[ribosome]/mu * m^3))+
+    xlab('Cell Cycle Phase')
+bp + 
+    scale_fill_manual(values=ylgnbl) + 
+    scale_colour_manual(values=ylgnbl) + 
+    theme(legend.position = "bottom")
+
+###############################################################################
+# Grouped boxplot all
+rpl <- read.csv('Data/rpl3.csv',sep=';', header = TRUE)
+rpl <- rpl[c(1,2,5)] #Choose only relevant columns
+colnames(rpl) <- c('CellCyclePhase', 'Morphology','Density') #Rename cols for better legends
+ylgnbl <- c('#7fcdbb',
+            '#1d91c0',
+            '#253494')
 rpl$Morphology<-factor(rpl$Morphology) #Set this column as factor
 rpl$CellCyclePhase<-factor(rpl$CellCyclePhase)
 bp <- ggplot(rpl, aes(CellCyclePhase, Density, colour=Morphology,fill=Morphology)) +

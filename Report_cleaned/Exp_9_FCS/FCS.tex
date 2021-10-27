@@ -37,10 +37,9 @@ Data acquisition was performed as the following:
 
 %----------------------------------------------------------------------------------------
 \subsection{Rpl3}
-Rpl3 is a Ribosomal 60S subunit protein L3, it is homologous to mammalian and bacterial ribosomal protein L3~\cite{YeaGenRpl3}.
 Proteins in yeast in this experiment are genetically expressing GFP. 
-The protein is Rpl3 a ribosomal protein of the large ribosome subunit. 
-The measurement of the fluorescence intensity of GFP of a yeast cell is hence proportional to the number of ribosomes contained within it.
+The protein is Rpl3, a Ribosomal 60S subunit protein L3, it is homologous to mammalian and bacterial ribosomal protein L3~\cite{YeaGenRpl3}. 
+The measurement of the fluorescence intensity of GFP of a yeast cell is proportional to the number of ribosomes contained within it.
 
 %----------------------------------------------------------------------------------------
 \subsection{FCS}
@@ -125,14 +124,14 @@ where $N_{A}$ is Avogadro's constant.
 After establishing the necessary parameters from FCS, imaging of the protein of interest (POI) in yeast was done by by acquiring a z-stack through LSM. 
 The alignment of pixel positions of the observation volume in the FCS measurements and the LSM image acquisitions were done automatically by the employed MATLAB software. 
 
-Since in LSM the images are acquired in photon counting mode, quantities such as the brightness (or proportionally, the intensity as well) of FCS acquisitions have to be transformed to $kHz$ with the corresponding measurement dwell time (in FCS).
+Since in LSM the images are acquired in photon counting mode, quantities such as the brightness (or correspondingly, the intensity as well) of FCS acquisitions have to be transformed to $kHz$ with the corresponding measurement dwell time (in FCS).
 \begin{align} 
 B\,(\text{kHz}) = \frac{\left\langle B\right\rangle }{(\text{dwell time})_{\text{FCS}}}
 \end{align}
 
 %-------------
 \paragraph{Calibration} 
-The obtained concentration of the fluorescent molecules (or the POI) from FCS measurement can be calibrated with the fluorescence intensity obtained through LSM acquisition to yield a plot as exampled in Fig.~\ref{EGFPsol}.  
+The obtained concentration of the fluorescent molecules (or the POI) from FCS measurement can be calibrated with the fluorescence intensity obtained through LSM acquisition to yield a plot as exampled in Fig.~\ref{fig:monogfp}.  
 
 %-------------
 \paragraph{Concentration}
@@ -172,10 +171,10 @@ A widefield acquisitions was performed alongside the LSM acquisitions to aid the
 \begin{figure}[!h]
 \centering
 \captionsetup[subfigure]{position=top}
-\subfloat[Yeast cell morphology\label{A}]{\includegraphics[width=0.7\columnwidth]{Exp_9_FCS/Figures/yeastbud}}\\\vspace{-0.7em}
+\subfloat[Yeast cell morphology\label{A}]{\includegraphics[width=0.6\columnwidth]{Exp_9_FCS/Figures/yeastbud}}\\\vspace{-0.7em}
 \captionsetup[subfigure]{position=bottom}
-\subfloat[\label{B}]{\includegraphics[width=0.22\columnwidth]{Exp_9_FCS/Figures/FCS-Image02_cr}}\hspace{0.1mm}
-\subfloat[\label{C}]{\includegraphics[width=0.22\columnwidth]{Exp_9_FCS/Figures/FCS-Image03_cr}}\\
+\subfloat[\label{B}]{\includegraphics[width=0.25\columnwidth]{Exp_9_FCS/Figures/FCS-Image02_cr}}\hspace{0.1mm}
+\subfloat[\label{C}]{\includegraphics[width=0.25\columnwidth]{Exp_9_FCS/Figures/FCS-Image03_cr}}\\
 \caption{\textbf{A}: Illustration of yeast cell morphology through cell cycle progression~\cite{Yu2011}. 
 \textbf{B} and \textbf{C} are examples of widefield acquisition of yeast cells in the experiment showing the identification and numbering of mother and bud cells in different cell cycle.}
 \label{fig:wideyeast}
@@ -184,18 +183,26 @@ A widefield acquisitions was performed alongside the LSM acquisitions to aid the
 Providing that the experimental (pixel) dwell time in LSM is 12.6 $\mu$s, dwell time in FCS is 1.53 $\mu$s, pixel size is 72 nm (pixel area = 72$^{2}$ nm$^{2}$), and the z-step is 460 nm, calculations and calibrations can be done according to the above mentioned explanations.
 
 Assuming a gaussian shaped illuminated volume, the confocal/observation volume in this experiment is 0.672 $\mu$m$^{3}$ as obtained by Eq.~\ref{eqn:veff} ($\kappa$ = 7.1) from the FCS measurement of different concentrations of monomeric AlexaFluor488 (henceforth addressed as EGFP) in solutions (\textit{in vitro}). 
-The result of this measurement is then compared to the calibration of FCS measurement of monomeric EGFP expressed in yeast cells (\textit{in vivo}) to its fluorescence intensity from LSM, shown in Fig.~\ref{EGFP1}.  
+The result of this measurement is then compared to the calibration of FCS measurement of monomeric EGFP expressed in yeast cells (\textit{in vivo}) to its fluorescence intensity from LSM, shown in Fig.~\ref{fig:monogfp}.  
+
+%\begin{figure}[!h]
+%\centering
+%\subfloat[Monomeric EGFP in solution\label{EGFPsol}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/EGFPsol}}\hfil
+%\subfloat[Monomeric EGFP-yeast\label{EGFP1}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/EGFP1}}
+%\caption{Plots of concentrations against the intensity of \textbf{A}: monomeric EGFP (AlexaFluor488) in solution and \textbf{B}: yeast expressing monomeric EGFP. The concentration for \textbf{A} is obtained from calculation of FCS measurements while in \textbf{B} from LSM. 
+%Both linear fits are set at 0 intercept.}
+%\label{fig:monogfp}
+%\end{figure}
 
 \begin{figure}[!h]
 \centering
-\subfloat[Monomeric EGFP in solution\label{EGFPsol}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/EGFPsol}}\hfil
-\subfloat[Monomeric EGFP-yeast\label{EGFP1}]{\includegraphics[width=0.49\columnwidth]{Exp_9_FCS/Figures/EGFP1}}
-\caption{Plots of concentrations against the intensity of \textbf{A}: monomeric EGFP (AlexaFluor488) in solution and \textbf{B}: yeast expressing monomeric EGFP. The concentration for \textbf{A} is obtained from calculation of FCS measurements while in \textbf{B} from LSM. 
+\includegraphics[width=0.9\columnwidth]{Exp_9_FCS/Figures/Calplot}
+\caption{Calibration plot of concentrations against the intensity of monomeric EGFP (AlexaFluor488) in solution (\textit{in vitro} - cyan solid line) and yeast expressing monomeric EGFP (\textit{in vivo}). The concentration for \textit{in vitro} (blue dashed line) measurement is obtained from calculation of FCS measurements while in \textit{in vivo} from LSM. 
 Both linear fits are set at 0 intercept.}
 \label{fig:monogfp}
 \end{figure}
 
-As can be seen from both of these calibration plots, the slopes yielded by both methods (\textit{in vitro} and \textit{in vivo}) are rather similar even though the calibration of the monomeric EGFP in solutions was done without using information from LSM acquisitions. 
+As can be seen from both of these calibration plots, the slopes yielded by both methods (\textit{in vitro} and \textit{in vivo}) are rather similar even though the calibration of the monomeric EGFP in solutions was done without using information from LSM acquisitions (slope~$\texttildelow 0.6$). 
 This indicates initially that the slope obtained from both of this methods can be used in the determination of the amount or concentration of the POI. However, values of $B$ are in a whole different magnitude (median \textit{in vitro}: 4.70371, \textit{in vivo}: 0.00335), where the brightness of EGFP in solution is higher than in cells/yeast. 
 This means that the information obtained from the \textit{in vitro} measurements may not be necessarily utilizable especially when it concerns to calculating the $p_{f}$ where the value of brightness matters a lot.
 
@@ -205,31 +212,46 @@ Following Eq.~\ref{eqn:pf}, the resulting fluorescence probability is 0.46. As m
 \centering
 \subfloat[N$_{\text{ribosome}}$ vs Volume\label{nv}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/NvsVol_motbud}}\hfill
 \subfloat[Density vs Volume\label{vdd}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/DvsV_wholecell}}
-\caption{\textbf{A}: correlation plot of N$_{\text{ribosome}}$ against volume. 
-\textbf{B}: plot of density vs volume. 
+\caption{\textbf{A}: correlation plot of N$_{\text{ribosome}}$ against volume of mother and bud cells. 
+\textbf{B}: plot of density against volume of whole cells (mothers+buds). 
 Red dashed lines in \textbf{B} are only for illustrative purposes. }
 \label{fig:corplot}
 \end{figure}
 
-The plot of N$_{\text{ribosome}}$ against the volume of each mother and bud cells (Fig.~\ref{nv}) demonstrates a positive, strong, and significant correlation. 
+The plot of N$_{\text{ribosome}}$ against the volume of each mother and bud cells (Fig.~\ref{nv}) demonstrates a positive, strong, and significant correlation (corr = 0.95). 
 Which means that the N$_{\text{ribosome}}$ is not a constant value as previously believed, on the contrary, it is the density that is relatively constant (5000-8000 counts/$\mu$m$^3$).
 This means that considering cells have different sizes, the number of ribosomes can not be used to indicate a cells state in the progression as demonstrated by the fact that a higher amount of N$_{\text{ribosome}}$ corresponds to larger cells (constant density). 
 This is shown in Fig.~\ref{vdd} where the density varies rather constantly within the band as indicated by the (arbitrary) dashed line.
 
-The inability of this to distinguish cell morphology during cell cycle progression, or rather the constant value of density, is visualized by the boxplot in Fig.~\ref{bwc} which shows that the density does not exhibit any meaningful change during the course of the cell cycle. 
+The inability of this to distinguish cell morphology during cell cycle progression, or rather the constant value of density, is visualized by the boxplot in Fig.~\ref{fig:bplot} which shows that the density does not exhibit any meaningful change during the course of the cell cycle. 
 The statistical test of which is supplied at the end of this chapter. In this case the late S phase is excluded from analysis due to insufficient amount of observation. 
+The analysis by ANOVA for three cell cycle phase indicates no significant difference, hence not carried on further to test the individual differences by pairwise t-tests.
 
 On the single cell level, however, discrimination between mother and bud cells is possible to be done with this technique by using the density as a measure. 
-Separating the data shows that buds constantly exhibit a lower density in comparison to mother cells during the cycle from G2 up to mitosis (Fig.\ref{bmb}). 
-Evidence to this is further supported by statistical tests that found significant difference between the density of buds and mother cells across the whole cell cycle progression (also supplied at the end of this chapter). 
+Separating the data shows that buds constantly exhibit a lower density in comparison to mother cells during the cycle from G2 up to mitosis (Fig.\ref{fig:bplot}). 
+Evidence to this is further supported by statistical tests that found significant difference (by ANOVA for two groups: buds and mothers) between the density of buds and mother cells across the whole cell cycle progression (also supplied at the end of this chapter). 
+
+Additional analysis was also done on the subset of buds. 
+From the acquired data of this experiment, providing that the S is removed due to only having one observation, it seems that even buds can be distinguished by the density according to which cell cycle phase they are currently in. 
+The evidence is again supplied by the end of this chapter where ANOVA is carried on for two groups of cell cycle phase (G2 and mitosis) with resulting significant difference.
+Since only two groups was tested, no pairwise t-test was conducted.
+
+
+%\begin{figure}[h!]
+%\centering
+%\subfloat[\label{bwc}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_wholecell}}\hfil
+%\subfloat[\label{bmb}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_motherbud}}
+%\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cell = mother + bud.}
+%\label{fig:bplot}
+%\end{figure}
 
 \begin{figure}[h!]
 \centering
-\subfloat[\label{bwc}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_wholecell}}\hfil
-\subfloat[\label{bmb}]{\includegraphics[width=0.5\columnwidth]{Exp_9_FCS/Figures/box_d_motherbud}}
-\caption{Boxplot of density of different cell morphologies across the cell cycle.}
+\includegraphics[width=0.8\columnwidth]{Exp_9_FCS/Figures/box_d_all}
+\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cells in the G2, late S, and mitosis indicates the total density of mother and bud cells in these phases.}
 \label{fig:bplot}
 \end{figure}
+
 
 
 %----------------------------------------------------------------------------------------

@@ -268,10 +268,10 @@
 
   \entry{ZeissCamp}{online}{}
     \field{labeltitlesource}{title}
-    \field{title}{Education in Microscopy and Digital Imaging}
+    \field{title}{Understanding the Digital Image}
     \verb{url}
-    \verb http://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.htm
-    \verb l
+    \verb https://www.zeiss.com/microscopy/int/solutions/reference/basic-micros
+    \verb copy/understanding-the-digital-image.html
     \endverb
     \field{urlday}{08}
     \field{urlmonth}{03}
@@ -312,8 +312,8 @@
     \field{labeltitlesource}{title}
     \field{title}{Introduction to Spectral Imaging and Linear Unmixing}
     \verb{url}
-    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/introduct
-    \verb ion.html
+    \verb https://www.zeiss.com/microscopy/int/solutions/reference/spectral-ima
+    \verb ging/introduction.html
     \endverb
     \field{urlday}{25}
     \field{urlmonth}{10}
@@ -322,10 +322,10 @@
 
   \entry{ZeissCamp2}{online}{}
     \field{labeltitlesource}{title}
-    \field{title}{Practical Considerations for Spectral Imaging}
+    \field{title}{Practical Aspects of Spectral Imaging}
     \verb{url}
-    \verb http://zeiss-campus.magnet.fsu.edu/articles/spectralimaging/considera
-    \verb tions.html
+    \verb https://www.zeiss.com/microscopy/int/solutions/reference/spectral-ima
+    \verb ging/practical-aspects-of-spectral-imaging.html
     \endverb
     \field{urlday}{25}
     \field{urlmonth}{09}
@@ -607,8 +607,8 @@
     \field{labeltitlesource}{title}
     \field{title}{Artifacts and Aberrations in Deconvolution Analysis}
     \verb{url}
-    \verb https://micro.magnet.fsu.edu/primer/digitalimaging/deconvolution/deco
-    \verb nartifacts.html
+    \verb https://www.olympus-lifescience.com/de/microscope-resource/primer/dig
+    \verb italimaging/deconvolution/deconartifacts/
     \endverb
     \field{urlday}{03}
     \field{urlmonth}{10}

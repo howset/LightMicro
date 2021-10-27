@@ -39,6 +39,7 @@ The following is the result of ANOVA where it is demonstrated that there is no s
 res.aov <- aov(Density ~ CellCyclePhase, data = rpl)
 summary(res.aov)
 ```
+
 -----
 
 ## Validity Check

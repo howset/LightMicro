@@ -135,14 +135,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{{Amount of proteins}}{40}{paragraph*.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}{Fluorescence Recovery After Photobleaching}}{45}{chapter.10}%
+\contentsline {chapter}{\numberline {10}{Fluorescence Recovery After Photobleaching}}{47}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}{Introduction}}{45}{section.10.1}%
+\contentsline {section}{\numberline {10.1}{Introduction}}{47}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Aim}}{45}{paragraph*.65}%
+\contentsline {paragraph}{{Aim}}{47}{paragraph*.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}{Methods}}{45}{section.10.2}%
+\contentsline {section}{\numberline {10.2}{Methods}}{47}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}{Results and Discussion}}{46}{section.10.3}%
+\contentsline {section}{\numberline {10.3}{Results and Discussion}}{48}{section.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{49}{figure.caption.66}%
+\contentsline {chapter}{References}{51}{figure.caption.66}%

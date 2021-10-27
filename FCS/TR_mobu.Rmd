@@ -39,6 +39,7 @@ The following is the result of ANOVA where it is demonstrated that there is sign
 res.aov <- aov(Density ~ Morphology, data = rpl)
 summary(res.aov)
 ```
+
 -----
 
 ## Validity Check
