@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  27 OCT 2021 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  28 OCT 2021 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1460,13 +1460,13 @@ Package epstopdf Info: Source file: <Frontpage/Mathnatlogo.eps>
 (epstopdf)                    size: 25496 bytes
 (epstopdf)             Command: <repstopdf --outfile=Frontpage/Mathnatlogo-eps-
 converted-to.pdf Frontpage/Mathnatlogo.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 <Frontpage/Mathnatlogo-eps-converted-to.pdf, id=4, 597.23125pt x 625.33624pt>
 File: Frontpage/Mathnatlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use Frontpage/Mathnatlogo-eps-converted-to.pdf>
 Package pdftex.def Info: Frontpage/Mathnatlogo-eps-converted-to.pdf  used on in
-put line 26.
+put line 28.
 (pdftex.def)             Requested size: 205.0pt x 214.64392pt.
  [1
 
@@ -2063,12 +2063,12 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
 ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
 n input line 39.
-<Exp_3_LSM/Figures/Bcr/LSMmergedv2.png, id=386, 1024.82875pt x 767.86874pt>
+<Exp_3_LSM/Figures/Bcr/LSMmergedv2.png, id=386, 1120.185pt x 841.1425pt>
 File: Exp_3_LSM/Figures/Bcr/LSMmergedv2.png Graphic file (type png)
 <use Exp_3_LSM/Figures/Bcr/LSMmergedv2.png>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/LSMmergedv2.png  used on input l
 ine 51.
-(pdftex.def)             Requested size: 410.0pt x 307.20064pt.
+(pdftex.def)             Requested size: 410.0pt x 307.86798pt.
 
 [10
 
@@ -2076,19 +2076,19 @@ ine 51.
 
 
 ] [11 <./Exp_3_LSM/Figures/Bcr/LSMmergedv2.png>]
-<Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg, id=418, 513.92pt x 513.92pt>
+<Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg, id=419, 513.92pt x 513.92pt>
 File: Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg  used on input l
 ine 94.
 (pdftex.def)             Requested size: 123.00125pt x 122.99828pt.
-<Exp_3_LSM/Figures/Bcr/Task5_20x_t.jpg, id=419, 513.92pt x 513.92pt>
+<Exp_3_LSM/Figures/Bcr/Task5_20x_t.jpg, id=420, 513.92pt x 513.92pt>
 File: Exp_3_LSM/Figures/Bcr/Task5_20x_t.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task5_20x_t.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task5_20x_t.jpg  used on input l
 ine 95.
 (pdftex.def)             Requested size: 123.00125pt x 122.99828pt.
-<Exp_3_LSM/Figures/Bcr/Task5_40x_t_10um10_edited4.png, id=420, 502.87875pt x 50
+<Exp_3_LSM/Figures/Bcr/Task5_40x_t_10um10_edited4.png, id=421, 502.87875pt x 50
 2.87875pt>
 File: Exp_3_LSM/Figures/Bcr/Task5_40x_t_10um10_edited4.png Graphic file (type p
 ng)
@@ -2098,7 +2098,7 @@ used on input line 96.
 (pdftex.def)             Requested size: 123.00125pt x 122.99535pt.
  [12 <./Exp_3_LSM/Figures/Bcr/Task5_10x_t.jpg> <./Exp_3_LSM/Figures/Bcr/Task5_2
 0x_t.jpg> <./Exp_3_LSM/Figures/Bcr/Task5_40x_t_10um10_edited4.png>]
-<Exp_3_LSM/Figures/Bcr/Task1_Group3_forres_30um5.jpg, id=434, 513.92pt x 513.92
+<Exp_3_LSM/Figures/Bcr/Task1_Group3_forres_30um5.jpg, id=435, 513.92pt x 513.92
 pt>
 File: Exp_3_LSM/Figures/Bcr/Task1_Group3_forres_30um5.jpg Graphic file (type jp
 g)
@@ -2106,19 +2106,19 @@ g)
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task1_Group3_forres_30um5.jpg  u
 sed on input line 116.
 (pdftex.def)             Requested size: 123.00125pt x 122.99828pt.
-<Exp_3_LSM/Figures/Bcr/Task6_256.jpg, id=435, 50.1875pt x 50.1875pt>
+<Exp_3_LSM/Figures/Bcr/Task6_256.jpg, id=436, 50.1875pt x 50.1875pt>
 File: Exp_3_LSM/Figures/Bcr/Task6_256.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task6_256.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task6_256.jpg  used on input lin
 e 117.
 (pdftex.def)             Requested size: 123.00125pt x 123.01938pt.
-<Exp_3_LSM/Figures/Bcr/Task6_512.jpg, id=436, 100.375pt x 100.375pt>
+<Exp_3_LSM/Figures/Bcr/Task6_512.jpg, id=437, 100.375pt x 100.375pt>
 File: Exp_3_LSM/Figures/Bcr/Task6_512.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task6_512.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task6_512.jpg  used on input lin
 e 118.
 (pdftex.def)             Requested size: 123.00125pt x 123.01021pt.
-<Exp_3_LSM/Figures/Bcr/Task6_860optimal_edited3.png, id=437, 165.61874pt x 164.
+<Exp_3_LSM/Figures/Bcr/Task6_860optimal_edited3.png, id=438, 165.61874pt x 164.
 615pt>
 File: Exp_3_LSM/Figures/Bcr/Task6_860optimal_edited3.png Graphic file (type png
 )
@@ -2126,19 +2126,19 @@ File: Exp_3_LSM/Figures/Bcr/Task6_860optimal_edited3.png Graphic file (type png
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task6_860optimal_edited3.png  us
 ed on input line 120.
 (pdftex.def)             Requested size: 123.00125pt x 122.25526pt.
-<Exp_3_LSM/Figures/Bcr/Task6_1024.jpg, id=438, 200.75pt x 200.75pt>
+<Exp_3_LSM/Figures/Bcr/Task6_1024.jpg, id=439, 200.75pt x 200.75pt>
 File: Exp_3_LSM/Figures/Bcr/Task6_1024.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task6_1024.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task6_1024.jpg  used on input li
 ne 121.
 (pdftex.def)             Requested size: 123.00125pt x 123.00562pt.
-<Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg, id=439, 401.5pt x 401.5pt>
+<Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg, id=440, 401.5pt x 401.5pt>
 File: Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg  used on inp
 ut line 122.
 (pdftex.def)             Requested size: 123.00125pt x 122.9995pt.
-<Exp_3_LSM/Figures/Bcr/Task7_z-stack_MIP_cropped.jpg, id=443, 401.5pt x 401.5pt
+<Exp_3_LSM/Figures/Bcr/Task7_z-stack_MIP_cropped.jpg, id=444, 401.5pt x 401.5pt
 >
 File: Exp_3_LSM/Figures/Bcr/Task7_z-stack_MIP_cropped.jpg Graphic file (type jp
 g)
@@ -2146,7 +2146,7 @@ g)
 Package pdftex.def Info: Exp_3_LSM/Figures/Bcr/Task7_z-stack_MIP_cropped.jpg  u
 sed on input line 138.
 (pdftex.def)             Requested size: 184.49875pt x 184.50232pt.
-<Exp_3_LSM/Figures/Bcr/Task7_z-stack_3Dpicture_cropped_10um10.jpg, id=444, 401.
+<Exp_3_LSM/Figures/Bcr/Task7_z-stack_3Dpicture_cropped_10um10.jpg, id=445, 401.
 5pt x 401.5pt>
 File: Exp_3_LSM/Figures/Bcr/Task7_z-stack_3Dpicture_cropped_10um10.jpg Graphic 
 file (type jpg)
@@ -2162,31 +2162,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 s/Bcr/Task6_256.jpg> <./Exp_3_LSM/Figures/Bcr/Task6_512.jpg> <./Exp_3_LSM/Figur
 es/Bcr/Task6_860optimal_edited3.png> <./Exp_3_LSM/Figures/Bcr/Task6_1024.jpg> <
 ./Exp_3_LSM/Figures/Bcr/Task6_2048_5um5.jpg>]
-<Exp_3_LSM/Figures/MS3/F1-C1-task1a2.jpg, id=470, 983.675pt x 983.675pt>
+<Exp_3_LSM/Figures/MS3/F1-C1-task1a2.jpg, id=471, 983.675pt x 983.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C1-task1a2.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F1-C1-task1a2.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C1-task1a2.jpg  used on input
  line 170.
 (pdftex.def)             Requested size: 123.00125pt x 122.98909pt.
-<Exp_3_LSM/Figures/MS3/F1-C2-task1a2.jpg, id=471, 983.675pt x 983.675pt>
+<Exp_3_LSM/Figures/MS3/F1-C2-task1a2.jpg, id=472, 983.675pt x 983.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C2-task1a2.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F1-C2-task1a2.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C2-task1a2.jpg  used on input
  line 171.
 (pdftex.def)             Requested size: 123.00125pt x 122.98909pt.
-<Exp_3_LSM/Figures/MS3/F1-C3-task1a2.jpg, id=472, 983.675pt x 983.675pt>
+<Exp_3_LSM/Figures/MS3/F1-C3-task1a2.jpg, id=473, 983.675pt x 983.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C3-task1a2.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F1-C3-task1a2.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C3-task1a2.jpg  used on input
  line 172.
 (pdftex.def)             Requested size: 123.00125pt x 122.98909pt.
-<Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg, id=473, 983.675pt x 983.675pt>
+<Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg, id=474, 983.675pt x 983.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg  used on 
 input line 174.
 (pdftex.def)             Requested size: 123.00125pt x 122.98909pt.
-<Exp_3_LSM/Figures/MS3/F1-C2-task1a2_Linear unmixing.jpg, id=474, 983.675pt x 9
+<Exp_3_LSM/Figures/MS3/F1-C2-task1a2_Linear unmixing.jpg, id=475, 983.675pt x 9
 83.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C2-task1a2_Linear unmixing.jpg Graphic file (typ
 e jpg)
@@ -2194,7 +2194,7 @@ e jpg)
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C2-task1a2_Linear unmixing.jp
 g  used on input line 175.
 (pdftex.def)             Requested size: 123.00125pt x 122.98909pt.
-<Exp_3_LSM/Figures/MS3/F1-C3-task1d_10um.jpg, id=475, 983.675pt x 983.675pt>
+<Exp_3_LSM/Figures/MS3/F1-C3-task1d_10um.jpg, id=476, 983.675pt x 983.675pt>
 File: Exp_3_LSM/Figures/MS3/F1-C3-task1d_10um.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F1-C3-task1d_10um.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F1-C3-task1d_10um.jpg  used on i
@@ -2204,12 +2204,12 @@ nput line 176.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Exp_3_LSM/Figures/MS3/ACEolfp.png, id=476, 1475.5125pt x 847.165pt>
+<Exp_3_LSM/Figures/MS3/ACEolfp.png, id=477, 1418.29875pt x 833.1125pt>
 File: Exp_3_LSM/Figures/MS3/ACEolfp.png Graphic file (type png)
 <use Exp_3_LSM/Figures/MS3/ACEolfp.png>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/ACEolfp.png  used on input line 
 186.
-(pdftex.def)             Requested size: 410.0pt x 235.39484pt.
+(pdftex.def)             Requested size: 410.0pt x 240.8337pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2219,73 +2219,73 @@ s/Bcr/Task7_z-stack_3Dpicture_cropped_10um10.jpg>] [15 <./Exp_3_LSM/Figures/MS3
 gures/MS3/F1-C3-task1a2.jpg> <./Exp_3_LSM/Figures/MS3/F1-C2-task1a_no405.jpg> <
 ./Exp_3_LSM/Figures/MS3/F1-C2-task1a2_Linear unmixing.jpg> <./Exp_3_LSM/Figures
 /MS3/F1-C3-task1d_10um.jpg>]
-<Exp_3_LSM/Figures/MS3/F3_a.jpg, id=506, 250.9375pt x 250.9375pt>
+<Exp_3_LSM/Figures/MS3/F3_a.jpg, id=507, 250.9375pt x 250.9375pt>
 File: Exp_3_LSM/Figures/MS3/F3_a.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F3_a.jpg>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F3_a.jpg  used on input line 225
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F3_a.jpg  used on input line 226
 .
 (pdftex.def)             Requested size: 123.00125pt x 123.00256pt.
-<Exp_3_LSM/Figures/MS3/F3_b.jpg, id=507, 250.9375pt x 250.9375pt>
+<Exp_3_LSM/Figures/MS3/F3_b.jpg, id=508, 250.9375pt x 250.9375pt>
 File: Exp_3_LSM/Figures/MS3/F3_b.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F3_b.jpg>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F3_b.jpg  used on input line 226
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F3_b.jpg  used on input line 227
 .
 (pdftex.def)             Requested size: 123.00125pt x 123.00256pt.
-<Exp_3_LSM/Figures/MS3/F3_10um.jpg, id=508, 250.9375pt x 250.9375pt>
+<Exp_3_LSM/Figures/MS3/F3_10um.jpg, id=509, 250.9375pt x 250.9375pt>
 File: Exp_3_LSM/Figures/MS3/F3_10um.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F3_10um.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F3_10um.jpg  used on input line 
-227.
+228.
 (pdftex.def)             Requested size: 123.00125pt x 123.00256pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Exp_3_LSM/Figures/MS3/F4_m.jpg, id=510, 1053.9375pt x 537.00626pt>
+<Exp_3_LSM/Figures/MS3/F4_m.jpg, id=511, 1053.9375pt x 537.00626pt>
 File: Exp_3_LSM/Figures/MS3/F4_m.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_m.jpg>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_m.jpg  used on input line 241
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_m.jpg  used on input line 242
 .
 (pdftex.def)             Requested size: 163.9975pt x 83.55467pt.
-<Exp_3_LSM/Figures/MS3/F4_surred.jpg, id=511, 1053.9375pt x 537.00626pt>
+<Exp_3_LSM/Figures/MS3/F4_surred.jpg, id=512, 1053.9375pt x 537.00626pt>
 File: Exp_3_LSM/Figures/MS3/F4_surred.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_surred.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_surred.jpg  used on input lin
-e 242.
+e 243.
 (pdftex.def)             Requested size: 163.9975pt x 83.55467pt.
-<Exp_3_LSM/Figures/MS3/F4_dep.jpg, id=512, 1053.9375pt x 537.00626pt>
+<Exp_3_LSM/Figures/MS3/F4_dep.jpg, id=513, 1053.9375pt x 537.00626pt>
 File: Exp_3_LSM/Figures/MS3/F4_dep.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_dep.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_dep.jpg  used on input line 2
-44.
+45.
 (pdftex.def)             Requested size: 163.9975pt x 83.55467pt.
-<Exp_3_LSM/Figures/MS3/F4_sha5umred.jpg, id=513, 1053.9375pt x 537.00626pt>
+<Exp_3_LSM/Figures/MS3/F4_sha5umred.jpg, id=514, 1053.9375pt x 537.00626pt>
 File: Exp_3_LSM/Figures/MS3/F4_sha5umred.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_sha5umred.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_sha5umred.jpg  used on input 
-line 245.
+line 246.
 (pdftex.def)             Requested size: 163.9975pt x 83.55467pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./Exp_3_LSM/Figures/MS3/ACEolfp.png>]
-<Exp_3_LSM/Figures/MS3/F4_z11.jpg, id=528, 190.7125pt x 34.1275pt>
+<Exp_3_LSM/Figures/MS3/F4_z11.jpg, id=529, 190.7125pt x 34.1275pt>
 File: Exp_3_LSM/Figures/MS3/F4_z11.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_z11.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_z11.jpg  used on input line 2
-63.
+64.
 (pdftex.def)             Requested size: 123.00125pt x 22.01074pt.
-<Exp_3_LSM/Figures/MS3/F4_z22a.jpg, id=529, 45.771pt x 40.953pt>
+<Exp_3_LSM/Figures/MS3/F4_z22a.jpg, id=530, 45.771pt x 40.953pt>
 File: Exp_3_LSM/Figures/MS3/F4_z22a.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_z22a.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_z22a.jpg  used on input line 
-264.
+265.
 (pdftex.def)             Requested size: 123.00125pt x 110.06586pt.
-<Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg, id=530, 45.771pt x 40.953pt>
+<Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg, id=531, 45.771pt x 40.953pt>
 File: Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg  used on input l
-ine 265.
+ine 266.
 (pdftex.def)             Requested size: 123.00125pt x 110.06586pt.
 
 
@@ -2295,29 +2295,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 p_3_LSM/Figures/MS3/F3_10um.jpg> <./Exp_3_LSM/Figures/MS3/F4_m.jpg> <./Exp_3_LS
 M/Figures/MS3/F4_surred.jpg> <./Exp_3_LSM/Figures/MS3/F4_dep.jpg> <./Exp_3_LSM/
 Figures/MS3/F4_sha5umred.jpg>]
-<Exp_3_LSM/Figures/MS3/F5mg_150um.jpg, id=551, 2569.6pt x 1541.76pt>
+<Exp_3_LSM/Figures/MS3/F5mg_150um.jpg, id=552, 2569.6pt x 1541.76pt>
 File: Exp_3_LSM/Figures/MS3/F5mg_150um.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F5mg_150um.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F5mg_150um.jpg  used on input li
-ne 281.
+ne 282.
 (pdftex.def)             Requested size: 286.99875pt x 172.1819pt.
-<Exp_3_LSM/Figures/MS3/F6_1.jpg, id=553, 1053.9375pt x 888.31876pt>
+<Exp_3_LSM/Figures/MS3/F6_1.jpg, id=554, 1053.9375pt x 888.31876pt>
 File: Exp_3_LSM/Figures/MS3/F6_1.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F6_1.jpg>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F6_1.jpg  used on input line 295
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F6_1.jpg  used on input line 296
 .
 (pdftex.def)             Requested size: 123.00125pt x 103.66585pt.
-<Exp_3_LSM/Figures/MS3/F6_2.jpg, id=554, 1053.9375pt x 888.31876pt>
+<Exp_3_LSM/Figures/MS3/F6_2.jpg, id=555, 1053.9375pt x 888.31876pt>
 File: Exp_3_LSM/Figures/MS3/F6_2.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F6_2.jpg>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F6_2.jpg  used on input line 296
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F6_2.jpg  used on input line 297
 .
 (pdftex.def)             Requested size: 123.00125pt x 103.66585pt.
-<Exp_3_LSM/Figures/MS3/F6_5um.jpg, id=555, 1053.9375pt x 888.31876pt>
+<Exp_3_LSM/Figures/MS3/F6_5um.jpg, id=556, 1053.9375pt x 888.31876pt>
 File: Exp_3_LSM/Figures/MS3/F6_5um.jpg Graphic file (type jpg)
 <use Exp_3_LSM/Figures/MS3/F6_5um.jpg>
 Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F6_5um.jpg  used on input line 2
-97.
+98.
 (pdftex.def)             Requested size: 123.00125pt x 103.66585pt.
 
 
@@ -2326,10 +2326,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [18 <./Exp_3_LSM/Figures/MS3/F4_z11.jpg> <./Exp_3_LSM/Figures/MS3/F4_z22a.jpg> 
 <./Exp_3_LSM/Figures/MS3/F4_z33_5uma.jpg> <./Exp_3_LSM/Figures/MS3/F5mg_150um.j
 pg>]
-<Exp_3_LSM/Figures/MS3/F7a.png, id=567, 1536.74126pt x 846.16125pt>
+<Exp_3_LSM/Figures/MS3/F7a.png, id=568, 1536.74126pt x 846.16125pt>
 File: Exp_3_LSM/Figures/MS3/F7a.png Graphic file (type png)
 <use Exp_3_LSM/Figures/MS3/F7a.png>
-Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F7a.png  used on input line 314.
+Package pdftex.def Info: Exp_3_LSM/Figures/MS3/F7a.png  used on input line 315.
 
 (pdftex.def)             Requested size: 410.0pt x 225.7552pt.
 ) [19 <./Exp_3_LSM/Figures/MS3/F6_1.jpg> <./Exp_3_LSM/Figures/MS3/F6_2.jpg> <./
@@ -2344,13 +2344,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-<Exp_4_TIRF/Figures/c2_cropped_grey8_norm0.jpg, id=578, 602.25pt x 602.25pt>
+<Exp_4_TIRF/Figures/c2_cropped_grey8_norm0.jpg, id=579, 602.25pt x 602.25pt>
 File: Exp_4_TIRF/Figures/c2_cropped_grey8_norm0.jpg Graphic file (type jpg)
 <use Exp_4_TIRF/Figures/c2_cropped_grey8_norm0.jpg>
 Package pdftex.def Info: Exp_4_TIRF/Figures/c2_cropped_grey8_norm0.jpg  used on
  input line 50.
 (pdftex.def)             Requested size: 184.49875pt x 184.49925pt.
-<Exp_4_TIRF/Figures/c1_cropped_grey32incon_scale10um.jpg, id=579, 602.25pt x 60
+<Exp_4_TIRF/Figures/c1_cropped_grey32incon_scale10um.jpg, id=580, 602.25pt x 60
 2.25pt>
 File: Exp_4_TIRF/Figures/c1_cropped_grey32incon_scale10um.jpg Graphic file (typ
 e jpg)
@@ -2367,7 +2367,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-<Exp_4_TIRF/Figures/b1_incon_scale10um.jpg, id=597, 401.5pt x 200.75pt>
+<Exp_4_TIRF/Figures/b1_incon_scale10um.jpg, id=598, 401.5pt x 200.75pt>
 File: Exp_4_TIRF/Figures/b1_incon_scale10um.jpg Graphic file (type jpg)
 <use Exp_4_TIRF/Figures/b1_incon_scale10um.jpg>
 Package pdftex.def Info: Exp_4_TIRF/Figures/b1_incon_scale10um.jpg  used on inp
@@ -2385,7 +2385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-<Exp_5_Expansion/Figures/genscheme.png, id=608, 1275.76625pt x 705.63625pt>
+<Exp_5_Expansion/Figures/genscheme.png, id=609, 1275.76625pt x 705.63625pt>
 File: Exp_5_Expansion/Figures/genscheme.png Graphic file (type png)
 <use Exp_5_Expansion/Figures/genscheme.png>
 Package pdftex.def Info: Exp_5_Expansion/Figures/genscheme.png  used on input l
@@ -2397,7 +2397,7 @@ ine 26.
 
 
  <./Exp_5_Expansion/Figures/genscheme.png>]
-<Exp_5_Expansion/Figures/trapeth.png, id=635, 72.5109pt x 51.7935pt>
+<Exp_5_Expansion/Figures/trapeth.png, id=636, 72.5109pt x 51.7935pt>
 File: Exp_5_Expansion/Figures/trapeth.png Graphic file (type png)
 <use Exp_5_Expansion/Figures/trapeth.png>
 Package pdftex.def Info: Exp_5_Expansion/Figures/trapeth.png  used on input lin
@@ -2419,49 +2419,49 @@ Overfull \hbox (30.28159pt too wide) in paragraph at lines 60--68
  [][] 
  []
 
-<Exp_5_Expansion/Figures/bNExpComp_3um.jpg, id=636, 401.5pt x 401.5pt>
+<Exp_5_Expansion/Figures/bNExpComp_3um.jpg, id=637, 401.5pt x 401.5pt>
 File: Exp_5_Expansion/Figures/bNExpComp_3um.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bNExpComp_3um.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bNExpComp_3um.jpg  used on inp
 ut line 77.
 (pdftex.def)             Requested size: 94.29825pt x 94.29736pt.
-<Exp_5_Expansion/Figures/bNExpred.jpg, id=637, 120.45pt x 120.45pt>
+<Exp_5_Expansion/Figures/bNExpred.jpg, id=638, 120.45pt x 120.45pt>
 File: Exp_5_Expansion/Figures/bNExpred.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bNExpred.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bNExpred.jpg  used on input li
 ne 78.
 (pdftex.def)             Requested size: 94.29825pt x 94.30165pt.
-<Exp_5_Expansion/Figures/bNExpgreen.jpg, id=638, 120.45pt x 120.45pt>
+<Exp_5_Expansion/Figures/bNExpgreen.jpg, id=639, 120.45pt x 120.45pt>
 File: Exp_5_Expansion/Figures/bNExpgreen.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bNExpgreen.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bNExpgreen.jpg  used on input 
 line 79.
 (pdftex.def)             Requested size: 94.29825pt x 94.30165pt.
-<Exp_5_Expansion/Figures/bNExpblue_3um.jpg, id=639, 120.45pt x 120.45pt>
+<Exp_5_Expansion/Figures/bNExpblue_3um.jpg, id=640, 120.45pt x 120.45pt>
 File: Exp_5_Expansion/Figures/bNExpblue_3um.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bNExpblue_3um.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bNExpblue_3um.jpg  used on inp
 ut line 80.
 (pdftex.def)             Requested size: 94.29825pt x 94.30165pt.
-<Exp_5_Expansion/Figures/bExComp_10um.jpg, id=640, 401.5pt x 401.5pt>
+<Exp_5_Expansion/Figures/bExComp_10um.jpg, id=641, 401.5pt x 401.5pt>
 File: Exp_5_Expansion/Figures/bExComp_10um.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bExComp_10um.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bExComp_10um.jpg  used on inpu
 t line 82.
 (pdftex.def)             Requested size: 94.29825pt x 94.29736pt.
-<Exp_5_Expansion/Figures/bExred.jpg, id=641, 150.5625pt x 150.5625pt>
+<Exp_5_Expansion/Figures/bExred.jpg, id=642, 150.5625pt x 150.5625pt>
 File: Exp_5_Expansion/Figures/bExred.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bExred.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bExred.jpg  used on input line
  83.
 (pdftex.def)             Requested size: 94.29825pt x 94.3012pt.
-<Exp_5_Expansion/Figures/bExgreen.jpg, id=642, 150.5625pt x 150.5625pt>
+<Exp_5_Expansion/Figures/bExgreen.jpg, id=643, 150.5625pt x 150.5625pt>
 File: Exp_5_Expansion/Figures/bExgreen.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bExgreen.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bExgreen.jpg  used on input li
 ne 84.
 (pdftex.def)             Requested size: 94.29825pt x 94.3012pt.
-<Exp_5_Expansion/Figures/bExblue_10um.jpg, id=643, 150.5625pt x 150.5625pt>
+<Exp_5_Expansion/Figures/bExblue_10um.jpg, id=644, 150.5625pt x 150.5625pt>
 File: Exp_5_Expansion/Figures/bExblue_10um.jpg Graphic file (type jpg)
 <use Exp_5_Expansion/Figures/bExblue_10um.jpg>
 Package pdftex.def Info: Exp_5_Expansion/Figures/bExblue_10um.jpg  used on inpu
@@ -2482,7 +2482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-<Exp_6_Airyscan/Figures/airyscan_ed.png, id=661, 630.355pt x 344.28625pt>
+<Exp_6_Airyscan/Figures/airyscan_ed.png, id=662, 630.355pt x 344.28625pt>
 File: Exp_6_Airyscan/Figures/airyscan_ed.png Graphic file (type png)
 <use Exp_6_Airyscan/Figures/airyscan_ed.png>
 Package pdftex.def Info: Exp_6_Airyscan/Figures/airyscan_ed.png  used on input 
@@ -2506,7 +2506,7 @@ ta) and CP224 (centro-
 
 
  <./Exp_6_Airyscan/Figures/airyscan_ed.png>]
-<Exp_6_Airyscan/Figures/BlowSl.png, id=680, 1007.765pt x 845.1575pt>
+<Exp_6_Airyscan/Figures/BlowSl.png, id=681, 1007.765pt x 845.1575pt>
 File: Exp_6_Airyscan/Figures/BlowSl.png Graphic file (type png)
 <use Exp_6_Airyscan/Figures/BlowSl.png>
 Package pdftex.def Info: Exp_6_Airyscan/Figures/BlowSl.png  used on input line 
@@ -2516,12 +2516,12 @@ Package pdftex.def Info: Exp_6_Airyscan/Figures/BlowSl.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Exp_6_Airyscan/Figures/DictSl.png, id=695, 797.98125pt x 435.6275pt>
+<Exp_6_Airyscan/Figures/DictSl.png, id=696, 742.775pt x 406.51875pt>
 File: Exp_6_Airyscan/Figures/DictSl.png Graphic file (type png)
 <use Exp_6_Airyscan/Figures/DictSl.png>
 Package pdftex.def Info: Exp_6_Airyscan/Figures/DictSl.png  used on input line 
 91.
-(pdftex.def)             Requested size: 368.9975pt x 201.44133pt.
+(pdftex.def)             Requested size: 368.9975pt x 201.95624pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2536,7 +2536,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_input.jpg, id=715, 186.9384pt x 146
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_input.jpg, id=717, 186.9384pt x 146
 .7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_input.jpg Graphic file (type j
 pg)
@@ -2544,7 +2544,7 @@ pg)
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_input.jpg  
 used on input line 42.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_iterc.jpg, id=716, 186.9384pt x 146
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_iterc.jpg, id=718, 186.9384pt x 146
 .7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_iterc.jpg Graphic file (type j
 pg)
@@ -2552,7 +2552,7 @@ pg)
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_iterc.jpg  
 used on input line 43.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_itert.jpg, id=717, 186.9384pt x 146
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_itert.jpg, id=719, 186.9384pt x 146
 .7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_itert.jpg Graphic file (type j
 pg)
@@ -2560,7 +2560,7 @@ pg)
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_itert.jpg  
 used on input line 44.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_fastiterc.jpg, id=718, 186.9384pt x
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_fastiterc.jpg, id=720, 186.9384pt x
  146.7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_fastiterc.jpg Graphic file (ty
 pe jpg)
@@ -2568,7 +2568,7 @@ pe jpg)
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_fastiterc.j
 pg  used on input line 45.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_fastitert.jpg, id=719, 186.9384pt x
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_fastitert.jpg, id=721, 186.9384pt x
  146.7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_fastitert.jpg Graphic file (ty
 pe jpg)
@@ -2576,7 +2576,7 @@ pe jpg)
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_fastitert.j
 pg  used on input line 46.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilc.jpg, id=720, 186.9384pt x 1
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilc.jpg, id=722, 186.9384pt x 1
 46.7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilc.jpg Graphic file (type
  jpg)
@@ -2584,7 +2584,7 @@ File: Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilc.jpg Graphic file (type
 Package pdftex.def Info: Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilc.jpg
   used on input line 47.
 (pdftex.def)             Requested size: 196.79825pt x 154.44426pt.
-<Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilt.jpg, id=721, 186.9384pt x 1
+<Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilt.jpg, id=723, 186.9384pt x 1
 46.7081pt>
 File: Exp_7_Deconvolution/Figures/bcomposite/g_b_invfilt.jpg Graphic file (type
  jpg)
@@ -2603,7 +2603,7 @@ ite/g_b_itert.jpg> <./Exp_7_Deconvolution/Figures/bcomposite/g_b_fastiterc.jpg>
  <./Exp_7_Deconvolution/Figures/bcomposite/g_b_fastitert.jpg> <./Exp_7_Deconvol
 ution/Figures/bcomposite/g_b_invfilc.jpg> <./Exp_7_Deconvolution/Figures/bcompo
 site/g_b_invfilt.jpg>]
-<Exp_7_Deconvolution/Figures/av_tabnmerr7.png, id=744, 517.09184pt x 287.6346pt
+<Exp_7_Deconvolution/Figures/av_tabnmerr7.png, id=746, 517.09184pt x 287.6346pt
 >
 File: Exp_7_Deconvolution/Figures/av_tabnmerr7.png Graphic file (type png)
 <use Exp_7_Deconvolution/Figures/av_tabnmerr7.png>
@@ -2615,7 +2615,7 @@ input line 103.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
-<Exp_7_Deconvolution/Figures/montagemerged3t.png, id=757, 883.3pt x 1454.43375p
+<Exp_7_Deconvolution/Figures/montagemerged3t.png, id=759, 883.3pt x 1454.43375p
 t>
 File: Exp_7_Deconvolution/Figures/montagemerged3t.png Graphic file (type png)
 <use Exp_7_Deconvolution/Figures/montagemerged3t.png>
@@ -2643,7 +2643,7 @@ Overfull \hbox (7.77467pt too wide) in paragraph at lines 18--24
 study-ing stimulus-dependent
  []
 
-<Exp_8_CaImaging/Figures/fura2aatbio2.png, id=783, 703.62875pt x 543.02875pt>
+<Exp_8_CaImaging/Figures/fura2aatbio2.png, id=785, 703.62875pt x 543.02875pt>
 File: Exp_8_CaImaging/Figures/fura2aatbio2.png Graphic file (type png)
 <use Exp_8_CaImaging/Figures/fura2aatbio2.png>
 Package pdftex.def Info: Exp_8_CaImaging/Figures/fura2aatbio2.png  used on inpu
@@ -2661,13 +2661,13 @@ dis-tri-bu-tions, volume changes,
 
 
  <./Exp_8_CaImaging/Figures/fura2aatbio2.png>]
-<Exp_8_CaImaging/Figures/drawing.pdf, id=799, 204.96922pt x 185.50008pt>
+<Exp_8_CaImaging/Figures/drawing.pdf, id=801, 204.96922pt x 185.50008pt>
 File: Exp_8_CaImaging/Figures/drawing.pdf Graphic file (type pdf)
 <use Exp_8_CaImaging/Figures/drawing.pdf>
 Package pdftex.def Info: Exp_8_CaImaging/Figures/drawing.pdf  used on input lin
 e 87.
 (pdftex.def)             Requested size: 184.49875pt x 166.9853pt.
-<Exp_8_CaImaging/Figures/drawing-1.pdf, id=800, 170.56525pt x 183.84406pt>
+<Exp_8_CaImaging/Figures/drawing-1.pdf, id=802, 170.56525pt x 183.84406pt>
 File: Exp_8_CaImaging/Figures/drawing-1.pdf Graphic file (type pdf)
 <use Exp_8_CaImaging/Figures/drawing-1.pdf>
 Package pdftex.def Info: Exp_8_CaImaging/Figures/drawing-1.pdf  used on input l
@@ -2700,12 +2700,12 @@ Overfull \hbox (0.24109pt too wide) in paragraph at lines 46--49
 
 
 ]
-<Exp_9_FCS/Figures/ACF.jpg, id=863, 701.62125pt x 513.92pt>
+<Exp_9_FCS/Figures/ACF.jpg, id=865, 701.62125pt x 513.92pt>
 File: Exp_9_FCS/Figures/ACF.jpg Graphic file (type jpg)
 <use Exp_9_FCS/Figures/ACF.jpg>
 Package pdftex.def Info: Exp_9_FCS/Figures/ACF.jpg  used on input line 54.
 (pdftex.def)             Requested size: 102.5pt x 75.07716pt.
-<Exp_9_FCS/Figures/bac.png, id=864, 1532.72626pt x 529.98pt>
+<Exp_9_FCS/Figures/bac.png, id=866, 1532.72626pt x 529.98pt>
 File: Exp_9_FCS/Figures/bac.png Graphic file (type png)
 <use Exp_9_FCS/Figures/bac.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/bac.png  used on input line 55.
@@ -2716,26 +2716,26 @@ Overfull \hbox (6.33765pt too wide) in paragraph at lines 76--79
 95 Fluor-es-cence meas-ure-ments as-sumes that the amount
  []
 
-<Exp_9_FCS/Figures/npol.png, id=873, 1564.84625pt x 617.30624pt>
+<Exp_9_FCS/Figures/npol.png, id=875, 1564.84625pt x 617.30624pt>
 File: Exp_9_FCS/Figures/npol.png Graphic file (type png)
 <use Exp_9_FCS/Figures/npol.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/npol.png  used on input line 97.
 (pdftex.def)             Requested size: 246.0025pt x 97.03786pt.
 [37 <./Exp_9_FCS/Figures/ACF.jpg> <./Exp_9_FCS/Figures/bac.png>] [38 <./Exp_9_F
 CS/Figures/npol.png>]
-<Exp_9_FCS/Figures/yeastbud.jpg, id=911, 126.4725pt x 33.2442pt>
+<Exp_9_FCS/Figures/yeastbud.jpg, id=913, 126.4725pt x 33.2442pt>
 File: Exp_9_FCS/Figures/yeastbud.jpg Graphic file (type jpg)
 <use Exp_9_FCS/Figures/yeastbud.jpg>
 Package pdftex.def Info: Exp_9_FCS/Figures/yeastbud.jpg  used on input line 174
 .
 (pdftex.def)             Requested size: 246.0025pt x 64.6651pt.
-<Exp_9_FCS/Figures/FCS-Image02_cr.png, id=912, 256.96pt x 231.86626pt>
+<Exp_9_FCS/Figures/FCS-Image02_cr.png, id=914, 256.96pt x 231.86626pt>
 File: Exp_9_FCS/Figures/FCS-Image02_cr.png Graphic file (type png)
 <use Exp_9_FCS/Figures/FCS-Image02_cr.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/FCS-Image02_cr.png  used on input li
 ne 176.
 (pdftex.def)             Requested size: 102.5pt x 92.49011pt.
-<Exp_9_FCS/Figures/FCS-Image03_cr.jpg, id=913, 256.96pt x 231.86626pt>
+<Exp_9_FCS/Figures/FCS-Image03_cr.jpg, id=915, 256.96pt x 231.86626pt>
 File: Exp_9_FCS/Figures/FCS-Image03_cr.jpg Graphic file (type jpg)
 <use Exp_9_FCS/Figures/FCS-Image03_cr.jpg>
 Package pdftex.def Info: Exp_9_FCS/Figures/FCS-Image03_cr.jpg  used on input li
@@ -2749,7 +2749,7 @@ Overfull \hbox (4.1722pt too wide) in paragraph at lines 185--187
 
 [39 <./Exp_9_FCS/Figures/yeastbud.jpg> <./Exp_9_FCS/Figures/FCS-Image02_cr.png>
  <./Exp_9_FCS/Figures/FCS-Image03_cr.jpg>]
-<Exp_9_FCS/Figures/Calplot.png, id=936, 609.77812pt x 332.74312pt>
+<Exp_9_FCS/Figures/Calplot.png, id=938, 609.77812pt x 332.74312pt>
 File: Exp_9_FCS/Figures/Calplot.png Graphic file (type png)
 <use Exp_9_FCS/Figures/Calplot.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/Calplot.png  used on input line 199.
@@ -2768,13 +2768,13 @@ LaTeX Warning: Command \texttildelow invalid in math mode on input line 205.
 
 LaTeX Warning: Command \texttildelow invalid in math mode on input line 205.
 
-<Exp_9_FCS/Figures/NvsVol_motbud.png, id=938, 376.40625pt x 222.07968pt>
+<Exp_9_FCS/Figures/NvsVol_motbud.png, id=940, 376.40625pt x 222.07968pt>
 File: Exp_9_FCS/Figures/NvsVol_motbud.png Graphic file (type png)
 <use Exp_9_FCS/Figures/NvsVol_motbud.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/NvsVol_motbud.png  used on input lin
 e 213.
 (pdftex.def)             Requested size: 205.0pt x 120.95139pt.
-<Exp_9_FCS/Figures/DvsV_wholecell.png, id=939, 376.40625pt x 222.07968pt>
+<Exp_9_FCS/Figures/DvsV_wholecell.png, id=941, 376.40625pt x 222.07968pt>
 File: Exp_9_FCS/Figures/DvsV_wholecell.png Graphic file (type png)
 <use Exp_9_FCS/Figures/DvsV_wholecell.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/DvsV_wholecell.png  used on input li
@@ -2784,7 +2784,7 @@ ne 214.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [40 <./Exp_9_FCS/Figures/Calplot.png (PNG copy)>]
-<Exp_9_FCS/Figures/box_d_all.png, id=948, 509.65407pt x 338.01282pt>
+<Exp_9_FCS/Figures/box_d_all.png, id=950, 509.65407pt x 338.01282pt>
 File: Exp_9_FCS/Figures/box_d_all.png Graphic file (type png)
 <use Exp_9_FCS/Figures/box_d_all.png>
 Package pdftex.def Info: Exp_9_FCS/Figures/box_d_all.png  used on input line 22
@@ -2793,7 +2793,7 @@ Package pdftex.def Info: Exp_9_FCS/Figures/box_d_all.png  used on input line 22
  [41 <./Exp_9_FCS/Figures/NvsVol_motbud.png (PNG copy)> <./Exp_9_FCS/Figures/Dv
 sV_wholecell.png (PNG copy)> <./Exp_9_FCS/Figures/box_d_all.png (PNG copy)>]) [
 42]
-<Exp_9_FCS/Res/TR_wc.pdf, id=965, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_wc.pdf, id=967, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_wc.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_wc.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_wc.pdf  used on input line 92.
@@ -2802,7 +2802,7 @@ File: Exp_9_FCS/Res/TR_wc.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_wc.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_wc.pdf  used on input line 92.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Exp_9_FCS/Res/TR_wc.pdf, id=968, page=1, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_wc.pdf, id=970, page=1, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_wc.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_wc.pdf, page 1>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_wc.pdf , page1 used on input line 92.
@@ -2831,7 +2831,7 @@ Package pdftex.def Info: Exp_9_FCS/Res/TR_wc.pdf , page1 used on input line 92.
  [43
 
  <./Exp_9_FCS/Res/TR_wc.pdf>]
-<Exp_9_FCS/Res/TR_mobu.pdf, id=1000, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_mobu.pdf, id=1002, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_mobu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_mobu.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_mobu.pdf  used on input line 93.
@@ -2840,7 +2840,7 @@ File: Exp_9_FCS/Res/TR_mobu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_mobu.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_mobu.pdf  used on input line 93.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Exp_9_FCS/Res/TR_mobu.pdf, id=1003, page=1, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_mobu.pdf, id=1005, page=1, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_mobu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_mobu.pdf, page 1>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_mobu.pdf , page1 used on input line 9
@@ -2867,7 +2867,7 @@ Package pdftex.def Info: Exp_9_FCS/Res/TR_mobu.pdf , page1 used on input line 9
 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [44 <./Exp_9_FCS/Res/TR_mobu.pdf>]
-<Exp_9_FCS/Res/TR_bu.pdf, id=1028, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_bu.pdf, id=1030, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_bu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_bu.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_bu.pdf  used on input line 94.
@@ -2876,7 +2876,7 @@ File: Exp_9_FCS/Res/TR_bu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_bu.pdf>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_bu.pdf  used on input line 94.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Exp_9_FCS/Res/TR_bu.pdf, id=1031, page=1, 614.295pt x 794.97pt>
+<Exp_9_FCS/Res/TR_bu.pdf, id=1033, page=1, 614.295pt x 794.97pt>
 File: Exp_9_FCS/Res/TR_bu.pdf Graphic file (type pdf)
 <use Exp_9_FCS/Res/TR_bu.pdf, page 1>
 Package pdftex.def Info: Exp_9_FCS/Res/TR_bu.pdf , page1 used on input line 94.
@@ -2918,13 +2918,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
 
 ]
-<Exp_10_FRAP/Figures/CTL-H-NE81BGsd_nor2.jpg, id=1079, 1445.4pt x 949.5475pt>
+<Exp_10_FRAP/Figures/CTL-H-NE81BGsd_nor2.jpg, id=1081, 1445.4pt x 949.5475pt>
 File: Exp_10_FRAP/Figures/CTL-H-NE81BGsd_nor2.jpg Graphic file (type jpg)
 <use Exp_10_FRAP/Figures/CTL-H-NE81BGsd_nor2.jpg>
 Package pdftex.def Info: Exp_10_FRAP/Figures/CTL-H-NE81BGsd_nor2.jpg  used on i
 nput line 78.
 (pdftex.def)             Requested size: 348.5025pt x 228.93925pt.
-<Exp_10_FRAP/Figures/CTL-H-Erg24BGsd_nor2.png, id=1080, 346.896pt x 227.8914pt>
+<Exp_10_FRAP/Figures/CTL-H-Erg24BGsd_nor2.png, id=1082, 346.896pt x 227.8914pt>
 
 File: Exp_10_FRAP/Figures/CTL-H-Erg24BGsd_nor2.png Graphic file (type png)
 <use Exp_10_FRAP/Figures/CTL-H-Erg24BGsd_nor2.png>
@@ -3008,6 +3008,10 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `LightMicroRep.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'LightMicroRep.run.xml'.
 \openout1 = `LightMicroRep.run.xml'.
 
@@ -3016,7 +3020,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
 Here is how much of TeX's memory you used:
  33261 strings out of 483016
  661695 string characters out of 5961286
- 1564421 words of memory out of 5000000
+ 1564429 words of memory out of 5000000
  47086 multiletter control sequences out of 15000+600000
  672671 words of font info for 216 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -3047,9 +3051,9 @@ xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on LightMicroRep.pdf (53 pages, 16606802 bytes).
+Output written on LightMicroRep.pdf (53 pages, 16696247 bytes).
 PDF statistics:
- 1333 PDF objects out of 1440 (max. 8388607)
+ 1335 PDF objects out of 1440 (max. 8388607)
  1030 compressed objects within 11 object streams
  324 named destinations out of 1000 (max. 500000)
  26652 words of extra memory for PDF output out of 29859 (max. 10000000)

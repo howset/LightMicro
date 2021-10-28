@@ -16,7 +16,7 @@
 
 Fluorescence Correlation Spectroscopy (FCS) is based on the detection of fluorescence signal from a very small volume.
 It is a technique that allows one to measure concentrations and diffusion coefficients of fluorescently labelled molecules.
-In this experiment, confocal microscopy (LSM) is coupled with FCS to estimate calibration parameters and convert fluorescence intensities to the concentration (of the corresponding protein) in living cells ~\cite{Politi2018}.
+In this experiment, confocal microscopy (LSM) is coupled with FCS to estimate calibration parameters and convert fluorescence intensities to the concentration (of the corresponding protein of interest) in living cells ~\cite{Politi2018}.
 
 %----------------------------------------------------------------------------------------
 %	METHODS
@@ -39,7 +39,7 @@ Data acquisition was performed as the following:
 \subsection{Rpl3}
 Proteins in yeast in this experiment are genetically expressing GFP. 
 The protein is Rpl3, a Ribosomal 60S subunit protein L3, it is homologous to mammalian and bacterial ribosomal protein L3~\cite{YeaGenRpl3}. 
-The measurement of the fluorescence intensity of GFP of a yeast cell is proportional to the number of ribosomes contained within it.
+The measurement of the fluorescence intensity of GFP in a yeast cell is proportional to the number of ribosomes contained within it.
 
 %----------------------------------------------------------------------------------------
 \subsection{FCS}
@@ -66,7 +66,7 @@ V_{\text{eff}} = \pi^{\frac{3}{2}}\,w_{0}^{2}\,z_{0}
 \end{align}
 
 with $w_{0} = \sqrt{2\,(D_{dye}\,\tau_{D})}$, $z_{0} = \kappa\,w_{0}$, and $\kappa = \frac{2.33\,n}{NA}$, where $w_{0}$ and $z_{0}$ describes the dimension of the observation volume, $n$ is the refractive index, $NA$ is the numerical aperture, $D_{dye}$ is the diffusion coefficient, and $\tau_{D}$ is the average diffusion time. 
-The latter is obtained by fitting the auto correlation function (ACF) to a physical model of diffusion (Fig~\ref{taud}) while the other quantities are already known either as experimental parameters ($n$ and $NA$) or as an already established value as in the case of $D_{dye}$ of EGFP.
+The latter is obtained by fitting the Auto Correlation Function (ACF) to a physical model of diffusion (Fig~\ref{taud}) while the other quantities are already known either as experimental parameters ($n$ and $NA$) or as an already established value as in the case of $D_{dye}$ of EGFP.
 
 The ACF is a correlation of a fluorescence signal with a delayed copy of itself as a function of delay. 
 It is the result of the FCS measurement as illustrated in Fig.~\ref{bac}. 
@@ -107,8 +107,8 @@ The correction is done through the ratio of the initial fluorescence intensity (
 \begin{align} 
 N_{\text{corr}}=\frac{I_{0}}{I}\,N~\text{.}
 \end{align} 
-
-Also necessary to be performed alongside this is the usual background corrections. 
+ 
+The usual background correction is also necessary to be performed alongside this.
 
 %-------------
 \paragraph{Concentration}
@@ -121,10 +121,10 @@ where $N_{A}$ is Avogadro's constant.
 %----------------------------------------------------------------------------------------
 \subsection{LSM}
 
-After establishing the necessary parameters from FCS, imaging of the protein of interest (POI) in yeast was done by by acquiring a z-stack through LSM. 
+After establishing the necessary parameters from FCS, imaging of the protein of interest (POI) in yeast was done by acquiring a z-stack through LSM. 
 The alignment of pixel positions of the observation volume in the FCS measurements and the LSM image acquisitions were done automatically by the employed MATLAB software. 
 
-Since in LSM the images are acquired in photon counting mode, quantities such as the brightness (or correspondingly, the intensity as well) of FCS acquisitions have to be transformed to $kHz$ with the corresponding measurement dwell time (in FCS).
+Since in LSM the images are acquired in photon counting mode, quantities such as the brightness (or correspondingly, the intensity as well) of FCS acquisitions have to be transformed to $kHz$ according to the corresponding measurement dwell time (in FCS).
 \begin{align} 
 B\,(\text{kHz}) = \frac{\left\langle B\right\rangle }{(\text{dwell time})_{\text{FCS}}}
 \end{align}
@@ -152,14 +152,14 @@ N_{\text{voxel}} = \frac{\text{Area}}{\text{Pixel Area}}
 
 %-------------
 \paragraph{Amount of proteins}
-The Rpl3 protein is in the ribosomes of yeasts and the amount of which can now be calculated according to
+The Rpl3 protein is located in the ribosomes of yeasts and the amount of which can now be calculated according to
 \begin{align} 
 N_{\text{ribosome}} = [C] \cdot \text{pixel size} \cdot z_{\text{step}} \cdot N_{A} \cdot N_{\text{voxel}}
 \end{align}
 
 And finally, correcting the amount of ribosome to the fluorescence probability would then yield
 \begin{align} 
-N_{\text{ribosome}} = \frac{N_{\text{ribosome}}}{p_f}
+N_{\text{ribosome}} = \frac{N_{\text{ribosome}}}{p_f}.
 \end{align}
 
 \begin{center}
@@ -197,13 +197,13 @@ The result of this measurement is then compared to the calibration of FCS measur
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\columnwidth]{Exp_9_FCS/Figures/Calplot}
-\caption{Calibration plot of concentrations against the intensity of monomeric EGFP (AlexaFluor488) in solution (\textit{in vitro} - cyan solid line) and yeast expressing monomeric EGFP (\textit{in vivo}). The concentration for \textit{in vitro} (blue dashed line) measurement is obtained from calculation of FCS measurements while in \textit{in vivo} from LSM. 
+\caption{Calibration plot of concentrations against the intensity of monomeric EGFP in solution (\textit{in vitro} - cyan solid line) and yeast expressing monomeric EGFP (\textit{in vivo}). The concentration for \textit{in vitro} (blue dashed line) measurement is obtained from calculation of FCS measurements while in \textit{in vivo} from LSM. 
 Both linear fits are set at 0 intercept.}
 \label{fig:monogfp}
 \end{figure}
 
 As can be seen from both of these calibration plots, the slopes yielded by both methods (\textit{in vitro} and \textit{in vivo}) are rather similar even though the calibration of the monomeric EGFP in solutions was done without using information from LSM acquisitions (slope~$\texttildelow 0.6$). 
-This indicates initially that the slope obtained from both of this methods can be used in the determination of the amount or concentration of the POI. However, values of $B$ are in a whole different magnitude (median \textit{in vitro}: 4.70371, \textit{in vivo}: 0.00335), where the brightness of EGFP in solution is higher than in cells/yeast (because the absolute intensity is ). 
+This indicates initially that the slope obtained from both of this methods can be used in the determination of the amount or concentration of the POI. However, values of $B$ are in a whole different magnitude (median \textit{in vitro}: 4.70371, \textit{in vivo}: 0.00335), where the brightness of EGFP in solution is higher than in cells/yeast. 
 This means that the information obtained from the \textit{in vitro} measurements may not be necessarily utilizable especially when it concerns to calculating the $p_{f}$ where the value of brightness matters a lot.
 
 Following Eq.~\ref{eqn:pf}, the resulting fluorescence probability is 0.46. As mentioned, this value is used to correct the amount of calculated ribosome and is especially important to consider, because without it the resulting amount would be underestimated.
@@ -220,13 +220,13 @@ Red dashed lines in \textbf{B} are only for illustrative purposes. }
 
 The plot of N$_{\text{ribosome}}$ against the volume of each mother and bud cells (Fig.~\ref{nv}) demonstrates a positive, strong, and significant correlation (corr = 0.95). 
 Which means that the N$_{\text{ribosome}}$ is not a constant value as previously believed, on the contrary, it is the density that is relatively constant (5000-8000 counts/$\mu$m$^3$).
-This means that considering cells have different sizes, the number of ribosomes can not be used to indicate a cells state in the progression as demonstrated by the fact that a higher amount of N$_{\text{ribosome}}$ corresponds to larger cells (constant density). 
+This means that considering cells have different sizes, the number of ribosomes can not be used to indicate a cell's state in the progression as demonstrated by the fact that a higher amount of N$_{\text{ribosome}}$ corresponds to larger cells (constant density). 
 This is shown in Fig.~\ref{vdd} where the density varies rather constantly within the band as indicated by the (arbitrary) dashed line.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\columnwidth]{Exp_9_FCS/Figures/box_d_all}
-\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cells in the G2, late S, and mitosis indicates the total density of mother and bud cells in these phases.}
+\caption{Boxplot of density of different cell morphologies across the cell cycle. Whole cells in the G2, late S, and mitosis is the sum density of mother and bud cells in these phases.}
 \label{fig:bplot}
 \end{figure}
 
@@ -235,7 +235,7 @@ The statistical test of which is supplied at the end of this chapter. In this ca
 The analysis by ANOVA for three cell cycle phases indicates no significant difference, hence not carried on further to test the individual differences by pairwise t-tests.
 
 On the single cell level, however, discrimination between mother and bud cells is possible to be done with this technique by using the density as a measure. 
-Separating the data shows that buds constantly exhibit a lower density in comparison to mother cells during the cycle from G2 up to mitosis (Fig.\ref{fig:bplot}). 
+Separating the data shows that buds constantly exhibit a lower density in comparison to mother cells during the cycle from G2 up to mitosis (Fig.~\ref{fig:bplot}). 
 Evidence to this is further supported by statistical tests that found significant difference (by ANOVA for two groups: buds and mothers) between the density of buds and mother cells across the whole cell cycle progression (also supplied at the end of this chapter). 
 Since only two groups was tested, no pairwise t-test was necessary.
 
