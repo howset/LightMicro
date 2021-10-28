@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  28 OCT 2021 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.19)  28 OCT 2021 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3008,10 +3008,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `LightMicroRep.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'LightMicroRep.run.xml'.
 \openout1 = `LightMicroRep.run.xml'.
 
@@ -3020,7 +3016,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
 Here is how much of TeX's memory you used:
  33261 strings out of 483016
  661695 string characters out of 5961286
- 1564429 words of memory out of 5000000
+ 1564422 words of memory out of 5000000
  47086 multiletter control sequences out of 15000+600000
  672671 words of font info for 216 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -3051,7 +3047,7 @@ xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on LightMicroRep.pdf (53 pages, 16696247 bytes).
+Output written on LightMicroRep.pdf (53 pages, 16696257 bytes).
 PDF statistics:
  1335 PDF objects out of 1440 (max. 8388607)
  1030 compressed objects within 11 object streams
