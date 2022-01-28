@@ -7,4 +7,4 @@ Content:
 2. FWHM calculation script for LSM (in python).
 3. FWHM calculation script for Deconvolution (in python). 
 4. FCS plotting script and statistical tests (in R).
-5. The (cleaned) report itself.
+5. The (cleaned) report itself (without pdf).
